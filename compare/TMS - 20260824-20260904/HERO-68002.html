@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-68002 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-68002 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-68002_20260914_092415.docx　<strong>最终版</strong>：HERO-68002_final.pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 12 用例 / 最终版 23 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> TMS 2.0 - MySQL table lock race: two users can lock / assign the same table (lock API + update resv field) Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Functional Testing</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Lock Table API Concurrency</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Two users lock the same vacant table simultaneously</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Ten concurrent lock requests on the same table via JMeter</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Two reservations change table to the same target table concurrently</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Ten concurrent change-table requests via JMeter</li>
+<li><span class="badge bg-only">仅草稿</span> 3.1. GET_LOCK is released after request completion</li>
+<li><span class="badge bg-only">仅草稿</span> 3.2. No leftover lock rows after failed or timed-out requests</li>
+<li><span class="badge bg-only">仅草稿</span> 4.1. Locked table error includes the table number during quick table change</li>
+<li><span class="badge bg-only">仅草稿</span> 5.1. Concurrent operations on different tables do not block each other</li>
+<li><span class="badge bg-only">仅草稿</span> 6.1. MSSQL lock path regression check</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> HERO-68002 - TMS 2.0 - MySQL table lock race: two</li>
+<li><span class="badge bg-only">仅最终版</span> users can lock / assign the same table (lock API +</li>
+<li><span class="badge bg-only">仅最终版</span> update resv field)</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Concurrent Change Table to Same Target Table .................................................... 1</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. High Thread Count Concurrent Lock Requests ....................................................... 3</li>
+<li><span class="badge bg-only">仅最终版</span> F3.1. Named Lock Release and Timeout Validation ......................................................... 5</li>
+<li><span class="badge bg-only">仅最终版</span> F3.2. If the target table is already locked, the error message returned will include the</li>
+<li><span class="badge bg-only">仅最终版</span> F4.1. Concurrent Change Table to Same Target Table .................................................... 7</li>
+<li><span class="badge bg-only">仅最终版</span> F4.2. High Thread Count Concurrent Lock Requests ....................................................... 8</li>
+<li><span class="badge bg-only">仅最终版</span> F5.1. Verify the error message returned in Chrome .......................................................... 9</li>
+<li><span class="badge bg-only">仅最终版</span> F5.2. Verify the error message returned in Firefox ............................................................ 9</li>
+<li><span class="badge bg-only">仅最终版</span> F5.3. Verify the error message returned in Edge .............................................................10</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Concurrent Change Table to Same Target Table</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. High Thread Count Concurrent Lock Requests</li>
+<li><span class="badge bg-only">仅最终版</span> F3.1. Named Lock Release and Timeout Validation</li>
+<li><span class="badge bg-only">仅最终版</span> F3.2. If the target table is already locked, the error message returned will include</li>
+<li><span class="badge bg-only">仅最终版</span> the table number</li>
+<li><span class="badge bg-only">仅最终版</span> F4.1. Concurrent Change Table to Same Target Table</li>
+<li><span class="badge bg-only">仅最终版</span> F4.2. High Thread Count Concurrent Lock Requests</li>
+<li><span class="badge bg-only">仅最终版</span> F5.1. Verify the error message returned in Chrome</li>
+<li><span class="badge bg-only">仅最终版</span> 1. Functional tests are tested in Chrome Browser</li>
+<li><span class="badge bg-only">仅最终版</span> F5.2. Verify the error message returned in Firefox</li>
+<li><span class="badge bg-only">仅最终版</span> F5.3. Verify the error message returned in Edge</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+Test Environment
+ Browser: Chrome, Firefox, Edge
+ Environment: hqqccn1/ HKJC
+ Bug Reproduce：Branch</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:22　·　Sprint: 75474</p>
+</body></html>

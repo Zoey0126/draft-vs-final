@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-62973 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-62973 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-62973_20260916_183515.docx　<strong>最终版</strong>：HERO-62973 & CUS340 Daily OCENT Detail Report (Fixed Layout)(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">1.9%</div><div class="label">整体匹配率（草稿 14 用例 / 最终版 53 用例）</div></div>
+<table><thead><tr><th>用例标题</th><th>标题</th><th>前置</th><th>步骤</th><th>结果</th><th>整体</th></tr></thead><tbody>
+<tr><td>| Name | Daily OC/ENT Detail Report (Fixed Layout) |</td><td><span class="badge bg-mismatch">❌</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">匹配</span></td></tr>
+</tbody></table>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> HERO-62973 POS Report - Create new custom report from CUS340 and restore previous version Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Report Information</li>
+<li><span class="badge bg-only">仅草稿</span> | Field | Value |</li>
+<li><span class="badge bg-only">仅草稿</span> | Code | CUS340 / CUS380 |</li>
+<li><span class="badge bg-only">仅草稿</span> | Type | Improvement |</li>
+<li><span class="badge bg-only">仅草稿</span> Parameters to Validate</li>
+<li><span class="badge bg-only">仅草稿</span> | Parameters Name | Description | Options | Default |</li>
+<li><span class="badge bg-only">仅草稿</span> | N/A | No special configuration or parameter is required | N/A | N/A |</li>
+<li><span class="badge bg-only">仅草稿</span> Data Fields to Validate</li>
+<li><span class="badge bg-only">仅草稿</span> | Fields Name | Fields Description | Field Calculation |</li>
+<li><span class="badge bg-only">仅草稿</span> | N/A | This case does not involve field definition | N/A |</li>
+<li><span class="badge bg-only">仅草稿</span> Report Data Accuracy Verification</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Verify Report Console Lists Both CUS340 and CUS380</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> 1</li>
+<li><span class="badge bg-only">仅最终版</span> HERO-62973</li>
+<li><span class="badge bg-only">仅最终版</span> Tester: Yannis</li>
+<li><span class="badge bg-only">仅最终版</span> 5.1. Format in XLS: Passed .....................................................................................................................................................................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 5.2. Format in XLSX: Passed ...................................................................................................................................................................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 5.3. Format in CVS: Passed .................................................................................................................................................................................................................................................... 2</li>
+<li><span class="badge bg-only">仅最终版</span> 5.4. Format in HTML: Passed .................................................................................................................................................................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 5.5. Format in PDF: Passed ....................................................................................................................................................................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 5.6. Format in PPT: Passed .................................................................................................................................................................................................................................................... 2</li>
+<li><span class="badge bg-only">仅最终版</span> 5.7. Format in DOC: Passed ................................................................................................................................................................................................................................................... 2</li>
+<li><span class="badge bg-only">仅最终版</span> 6. Language is translated correctly, including Chinese (Traditional), Chinese (Simplified): Passed .....................................................................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 7. The exported data for each format correctly: Passed ...................................................................................................................................................................................................................... 3</li>
+<li><span class="badge bg-only">仅最终版</span> 7.1. Format in XLS: Passed .....................................................................................................................................................................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 7.2. Format in XLSX: Passed ...................................................................................................................................................................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 7.3. Format in CVS: Passed .................................................................................................................................................................................................................................................... 3</li>
+<li><span class="badge bg-only">仅最终版</span> 7.4. Format in HTML: Passed .................................................................................................................................................................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 7.5. Format in PDF: Passed ....................................................................................................................................................................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 7.6. Format in PPT: Passed .................................................................................................................................................................................................................................................... 4</li>
+<li><span class="badge bg-only">仅最终版</span> 7.7. Format in DOC: Passed ................................................................................................................................................................................................................................................... 4</li>
+<li><span class="badge bg-only">仅最终版</span> 8. Language is translated correctly, including Chinese (Traditional), Chinese (Simplified): Passed .....................................................................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 9. Show data corresponding Config zone correctly: Passed ................................................................................................................................................................................................................. 5</li>
+<li><span class="badge bg-only">仅最终版</span> 9.1. Login user is supreme config zone user, current config zone is supreme config zone ..................................................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 9.2. Login user is supreme config zone user, current config zone is sub config zone .......................................................................................................................................................... 5</li>
+<li><span class="badge bg-only">仅最终版</span> 9.3. Login user is sub config zone user, current config zone is sub config zone ...................................................................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 10. Successfully create preset parameter and running report: Passed ................................................................................................................................................................................................ 5</li>
+<li><span class="badge bg-only">仅最终版</span> 11. Successfully export report files for each format and send e-mail to target user: Passed .............................................................................................................................................................. 6</li>
+<li><span class="badge bg-only">仅最终版</span> 5.1. Format in XLS: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5.2. Format in XLSX: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5.3. Format in CVS: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5.4. Format in HTML: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5.5. Format in PDF: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5.6. Format in PPT: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5.7. Format in DOC: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 3</li>
+<li><span class="badge bg-only">仅最终版</span> 6. Language is translated correctly, including Chinese (Traditional), Chinese (Simplified): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7. The exported data for each format correctly: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7.1. Format in XLS: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7.2. Format in XLSX: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7.3. Format in CVS: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7.4. Format in HTML: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7.5. Format in PDF: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 4</li>
+<li><span class="badge bg-only">仅最终版</span> 7.6. Format in PPT: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7.7. Format in DOC: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 8. Language is translated correctly, including Chinese (Traditional), Chinese (Simplified): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5</li>
+<li><span class="badge bg-only">仅最终版</span> 9. Show data corresponding Config zone correctly: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 9.1. Login user is supreme config zone user, current config zone is supreme config zone</li>
+<li><span class="badge bg-only">仅最终版</span> 9.2. Login user is supreme config zone user, current config zone is sub config zone</li>
+<li><span class="badge bg-only">仅最终版</span> 9.3. Login user is sub config zone user, current config zone is sub config zone</li>
+<li><span class="badge bg-only">仅最终版</span> 10. Successfully create preset parameter and running report: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> Parameter:&sDateType=specified&dBeginDate=2025-01-01&dEndDate=2025-03-</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>草稿环境</strong><pre>Test Environment
+• Version: v1.0.0
+• Browser: Chrome 114.0.0.0, Firefox 114.0.0.0, Edge 114.0.0.0
+• Environment: Local Test Environment, HQ Test Environment, ER Test Environment</pre></div>
+<div class="field"><strong>最终版环境</strong><pre>Test Environment
+ Trunk(HQ1)&QC Office Server trunk version
+Requirements Traceability
+ V1.2.115.0 HERO-62973
+ V1.2.105.0 HERO-57434
+ V1.2.102.0 HERO-53654
+ V1.2.98.0 HERO-52787</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:12　·　Sprint: 65587</p>
+</body></html>

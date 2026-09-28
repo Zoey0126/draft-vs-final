@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-67800 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-67800 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-67800_20260914_092415.docx　<strong>最终版</strong>：HERO-67800 Test Report & POS202 Discount Detail Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 10 用例 / 最终版 15 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> POS202 Discount Detail Report - optimize loading performance Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Report Information</li>
+<li><span class="badge bg-only">仅草稿</span> | Field | Value |</li>
+<li><span class="badge bg-only">仅草稿</span> | Name | Discount Detail Report |</li>
+<li><span class="badge bg-only">仅草稿</span> | Code | POS202 |</li>
+<li><span class="badge bg-only">仅草稿</span> Report Functional Verification</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Report Loading Performance</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Verify POS202 loading performance with default parameters</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Verify loading performance with a wide business date range</li>
+<li><span class="badge bg-only">仅草稿</span> 1.3. Verify loading performance with multiple outlets and a high volume of checks</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> 1</li>
+<li><span class="badge bg-only">仅最终版</span> POS202 Discount Detail Report Test Report</li>
+<li><span class="badge bg-only">仅最终版</span> HERO-67800</li>
+<li><span class="badge bg-only">仅最终版</span> Tester: Orianna</li>
+<li><span class="badge bg-only">仅最终版</span> Date:2026-9-22</li>
+<li><span class="badge bg-only">仅最终版</span> 5.1. XLSX: Passed ................................................................................................................................................................................................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 5.2. Csv: Passed ..................................................................................................................................................................................................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 5.3. Html: Passed ............................................................................................................................................................................................................................................................................... 3</li>
+<li><span class="badge bg-only">仅最终版</span> 5.4. PDF: Passed .................................................................................................................................................................................................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 5.1. XLSX: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5.2. Csv: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 3</li>
+<li><span class="badge bg-only">仅最终版</span> 5.3. Html: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5.4. PDF: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> Performance Test Case</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>草稿环境</strong><pre>Test Environment
+• Version: v1.0.0
+• Browser: Chrome 114.0.0.0, Firefox 114.0.0.0, Edge 114.0.0.0
+• Environment: HQ Test Environment, Local Test Environment</pre></div>
+<div class="field"><strong>最终版环境</strong><pre>Test Environment
+ QC Cloud Server ls1/hqqccn1(trunk) & Customer Environment
+Parameters Verification
+Parameter Action Expect Result
+Data type
+Select Current business day (Default)
+Display current business day data
+-If select a single outlet, display the latest day that “Daily Start” was performed
+-If select multiple outlets, display the maximum day of the selected outlets
+-If the business day of is null, display empty
+Select Last business day
+Display last business day data
+-If select a single outlet, display the latest day that “Daily Close” was performed
+-If select multiple outlets, display the maximum day of the selected outlets
+-If the business day of is null, display empty
+Select Last Month Display last month data
+Select specified as below Display specified date or data range data
+Shops
+Select All (Default) Display all data
+Select single shop Display a single shop data
+Select multiple shops Display the multiple shops data
+Outlets
+Select All (Default) Display all data
+Select a single outlet Display a single outlet data
+Select multiple outlets Display multiple outlets data
+Discount Select Item discount + Check discount (Default) Display all discount types of data
+Select Item discount Display a single discount types of data
+Select Check discount Display multiple discount types of data
+Discount types Select All (Default) Display all discount types of data
+Select a single discount type Display a single discount types of data
+Select multiple discount type Display multiple discount types of data
+Revenue/Non-revenue Select All (Default) Display revenue, non-revenue and advance order data
+Select Revenue Display revenue data
+Select Non-revenue Display non-revenue data
+Select Advance order Display advance order data
+LPS Detail Select Show (Default) Display column "LPS Reference", "Authorizer ID", "Authorizer Name"(default)
+Select Hidden Hidden column "LPS Reference", "Authorizer ID", "Authorizer Name" (Default)
+Count the void in summary
+total
+Select Yes Void data and normal data will be presented in two table, void data will be displayed under the normal data
+Select No (Default) Void data and normal data will be presented in one table
+Show discount approve user
+name and id
+Select Yes Display the person who APPROVAL the discount will replace the value on "Authorizer Name" and
+"Authorizer ID"
+Select No (Default) Display the employee name and id who apply discount instead of the one who open check or close check
+Data Verification
+Filed Expect Result
+Report Title
+Show specified shop name, if parameter Shops select all or multiple shops, no show
+Show specified outlet name, if parameter Outlets select all or multiple outlets, no show
+Show report name: Discount Detail Report
+(Show corresponding discount according to the selection of “Discount”)
+(Show corresponding revenue type according to the selection of “Revenue/Non-revenue”)
+(Show specified date or data range)
+Outlet Show outlet name
+Discount Name Show discount name
+Discount Value
+1. If discount type is fixed amount, show discount amount, refer to db: pos_check_discounts->cdis_round_total
+2. If discount type is percentage, value = Discount/Total Sales*100%
+Discount Reference 1 Show discount reference 1, displayed separated by commas if check has multiple discount reference 1
+Discount Reference 2 Show discount reference 2, displayed separated by commas if check has multiple discount reference 2
+Discount Reference 3 Show discount reference 3, displayed separated by commas if check has multiple discount reference 3
+LPS Reference
+Show card number, support LPS and LPS svc interface
+1. LPS Reference: db -> hero_pos -> pos_check_extra_infos -> ckei_value, Satisfy ckei_section = 'membership_interface', ckei_variable = 'account_number'
+5
+Authorizer ID
+Show the employee id who apply discount instead of the one who open check or close check, if parameter “Show discount approver user name and id” select
+“No”
+Show the person who APPROVAL the discount will replace the value on "Authorizer ID", if parameter “Show discount approver user name and id” select “Yes”
+Authorizer Name
+Show the employee Name who apply discount instead of the one who open check or close check, if parameter “Show discount approver user name and id” select
+“No”
+Show the person who APPROVAL the discount will replace the value on "Authorizer Name", if parameter “Show discount approver user name and id” select “Yes”
+Void
+Show void or empty
+1. If the discount is voided, show void, otherwise keep empty.
+2. For the discount in the carry forward order, if the discount is void during the carry forward, the discount will be shown as voided on carry forward dates. This
+situation cannot be processed temporarily
+Employee Show discount apply username
+Check# Show check number
+OpenTime Show check open local time, the format of date and time follow the setting of “System Configuration > Report Module > Date Format, Time Format”
+CloseTime Show check close local time, show empty if the check is not closed, the format of date and time follow the setting of “System Configuration > Report Module >
+Date Format, Time Format”
+Table Show check table number, include table ext
+Cover Show guest number
+Count Show discount usage
+Discount Show discount amount, refer to db: pos_check_discounts->cdis_round_total
+Total Sales Show gross sales total, refer to db: pos_check_items->citm_round_total
+Service Charge 1 Show index1 addon SC, refer to db: pos_checks->chks_sc1
+Service Charge 2 Show index2 addon SC, refer to db: pos_checks->chks_sc2
+Tax Show addon tax amount, refer to db: pos_checks->chks_tax(1~25)
+Rounding Show rounding amount, refer to db: pos_checks->chks_round_amount
+Check Total Show check total, refer to db: pos_checks->chks_check total
+Payment
+Show payment method name
+1. If the check is paid by multiple payment, the payment method will be separated by ","
+Room/AR
+Show corresponding Room/AR number for PMS Interface, db: pos_check_extra_infos->ckei_variable=room
+1. If the payment has multiple room, use "," to split the number
+Grand Total Show all columns total in selected business days
+** END OF REPORT**
+Printed at Time Show print date and time of the local server, the format of date and time follow the setting of “System Configuration > Report Module > Date Format, Time
+Format”
+Printed By User Show operator last name and first name
+Report Code Show report Code, System Management->System Configuration->Report Module:
+1.Show Footer Report Code: Yes, show report code
+2.Show Footer Report Code: No, not show report code
+P. Show page number
+Export Verification
+Type Expect Result
+Excel Support to export to excel file
+Excel(.xlsx) Support to export to excel(.xlsx) file
+PDF Support to export to PDF file
+Word Support to export to Word file
+PostScript Support to export to PS file
+PowerPoint Support to export to PowerPoint file
+New CSV Support to export to CSV file
+Support exporting Data in CSV format without title headers
+Auto Report Support to export files to email
+Print Verification
+Type Expect Result
+HTML Support HTML format printing
+PDF Support PDF format printing
+Language Verification
+Preferred Language Expect Result
+English The page language is display in English, include hint
+Chinese (Traditional) The page language is display in Chinese (Traditional), include hint
+Chinese (Simplified) The page language is display in Chinese (Simplified), include hint
+Japanese The page language is display in Japanese, but not verify the translation accuracy
+Korean The page language is display in Korean, but not verify the translation accuracy
+Remark: The language of Japanese and Korean only validates the display without validating the language accuracy
+Requirements Traceability
+ V1.2.115.0 HERO-67800
+ V1.2.114.0 HERO-65879
+ V1.2.102.0 HERO-57127
+ V1.2.101.0 HERO-51149
+ V1.2.93.0 HERO-48732
+ V1.2.79.0 HERO-37018
+ V1.2.77.0 HERO-34933
+ V1.2.73.0 HERO-32501
+ V1.2.67.0 HERO-28448
+ V1.2.60.0 HERO-25287
+ V1.2.55.0 HERO-20241
+ V1.2.53.0 HERO-21113
+ V1.2.52.0 HERO-20182
+ V1.2.46.0 HERO-12713</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:07　·　Sprint: 65587</p>
+</body></html>

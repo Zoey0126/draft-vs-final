@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-68311 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-68311 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-68311_20260914_092415.docx　<strong>最终版</strong>：HERO-68311 Test Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">2.7%</div><div class="label">整体匹配率（草稿 9 用例 / 最终版 37 用例）</div></div>
+<table><thead><tr><th>用例标题</th><th>标题</th><th>前置</th><th>步骤</th><th>结果</th><th>整体</th></tr></thead><tbody>
+<tr><td>Functional Testing</td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">匹配</span></td></tr>
+</tbody></table>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> TMS 2.0 - Incorrect table number arrived after mark arrival Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Mark Arrival with Concurrent Table Change (Single Table)</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Mark arrival after table changed in another tab via edit booking</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Mark arrival after table changed via quick change</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. One of multiple tables changed before mark arrival</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Table number with table extension changed before mark arrival</li>
+<li><span class="badge bg-only">仅草稿</span> 2.3. Only table extension changed before mark arrival</li>
+<li><span class="badge bg-only">仅草稿</span> 3.1. Mark arrival without concurrent table change</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> HERO-68311 - TMS 2.0 - Incorrect table number arrived</li>
+<li><span class="badge bg-only">仅最终版</span> after mark arrival</li>
+<li><span class="badge bg-only">仅最终版</span> Tester: Johnson Liu</li>
+<li><span class="badge bg-only">仅最终版</span> Date: 2026-09-15</li>
+<li><span class="badge bg-only">仅最终版</span> Content</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Validation when Table Number is changed .............................................................. 2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Validation when Table Number and Extension are changed ....................................3</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Validation when only Table Extension is changed ....................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. Validation when multiple Table Numbers are changed ........................................... 5</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. Validation when multiple Table Numbers and Extensions are changed .................. 6</li>
+<li><span class="badge bg-only">仅最终版</span> F2.3. Validation when only multiple Table Extensions are changed ................................. 7</li>
+<li><span class="badge bg-only">仅最终版</span> F5.1. Pending Reservation - Edit Reservation reflects quick-changed table when WS is</li>
+<li><span class="badge bg-only">仅最终版</span> F5.2. Arrived Reservation - Edit Reservation reflects quick-changed table when WS is</li>
+<li><span class="badge bg-only">仅最终版</span> F5.3. Pending Reservation - Edit Reservation reflects quick-changed table when WS is</li>
+<li><span class="badge bg-only">仅最终版</span> F5.4. Arrival Reservation - Edit Reservation reflects quick-changed table when WS is</li>
+<li><span class="badge bg-only">仅最终版</span> F5.5. Edit Reservation loads correct cached table when WS is disconnected and no quick</li>
+<li><span class="badge bg-only">仅最终版</span> Test Environment ........................................................................................................................... 25</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Validation when Table Number is changed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Validation when Table Number and Extension are changed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Validation when only Table Extension is changed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. Validation when multiple Table Numbers are changed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. Validation when multiple Table Numbers and Extensions are changed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.3. Validation when only multiple Table Extensions are changed</li>
+<li><span class="badge bg-only">仅最终版</span> (untitled)</li>
+<li><span class="badge bg-only">仅最终版</span> (untitled)</li>
+<li><span class="badge bg-only">仅最终版</span> F5.1. Pending Reservation - Edit Reservation reflects quick-changed table when</li>
+<li><span class="badge bg-only">仅最终版</span> WS is disconnected</li>
+<li><span class="badge bg-only">仅最终版</span> F5.2. Arrived Reservation - Edit Reservation reflects quick-changed table when WS</li>
+<li><span class="badge bg-only">仅最终版</span> is disconnected</li>
+<li><span class="badge bg-only">仅最终版</span> F5.3. Pending Reservation - Edit Reservation reflects quick-changed table when</li>
+<li><span class="badge bg-only">仅最终版</span> WS is connected</li>
+<li><span class="badge bg-only">仅最终版</span> F5.4. Arrival Reservation - Edit Reservation reflects quick-changed table when WS</li>
+<li><span class="badge bg-only">仅最终版</span> is connected</li>
+<li><span class="badge bg-only">仅最终版</span> F5.5. Edit Reservation loads correct cached table when WS is disconnected and no</li>
+<li><span class="badge bg-only">仅最终版</span> quick change occurred</li>
+<li><span class="badge bg-only">仅最终版</span> (untitled)</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+Test Environment
+ Browser: Chrome, Firefox, Edge
+ Environment: HQ1(trunk) Test Environment</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:14　·　Sprint: 75474</p>
+</body></html>

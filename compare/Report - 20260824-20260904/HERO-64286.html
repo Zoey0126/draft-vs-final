@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-64286 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-64286 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-64286_20260914_092415.docx　<strong>最终版</strong>：HERO-64286 Test Report & POS225 OCENT Discount Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 9 用例 / 最终版 38 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> POS225 OC/ENT Discount Report - Missing summary section Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Report Information</li>
+<li><span class="badge bg-only">仅草稿</span> | Field | Value |</li>
+<li><span class="badge bg-only">仅草稿</span> | Name | OC/ENT Discount Report |</li>
+<li><span class="badge bg-only">仅草稿</span> | Code | POS225 |</li>
+<li><span class="badge bg-only">仅草稿</span> Report Functional Verification</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Summary Section Display</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Verify the summary section is displayed in the on-screen report</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Verify the summary section is displayed in all output formats</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> — 1 —</li>
+<li><span class="badge bg-only">仅最终版</span> POS225 OCENT Discount Report</li>
+<li><span class="badge bg-only">仅最终版</span> Tester: Mila. Cao</li>
+<li><span class="badge bg-only">仅最终版</span> Update Time:2026-09-17</li>
+<li><span class="badge bg-only">仅最终版</span> Contents</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Specified as below, All Shops,All Outlets, Item discount + Check discount,All Discount</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Last business day, Multiple Shops,Multiple Outlets, Item discount,Multiple Discount</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Last month, Single Shop,Single Outlet, Item discount,Single Discount Type,Revenue select Non-</li>
+<li><span class="badge bg-only">仅最终版</span> 1.4. Current business day, Single Shop,Single Outlet, Check discount,Single Discount Type,Revenue</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Excel(XLS): Passed ............................................................................................................................ 3</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Word: Passed ......................................................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 2.3. PDF: Passed ....................................................................................................................................... 3</li>
+<li><span class="badge bg-only">仅最终版</span> 2.4. PPT: Passed ........................................................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Successfully export preset parameter report: Passed ................................................................................. 4</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1. Excel (XLS): ........................................................................................................................................ 4</li>
+<li><span class="badge bg-only">仅最终版</span> 3.2. PDF: .................................................................................................................................................... 4</li>
+<li><span class="badge bg-only">仅最终版</span> 3.3. HTML: ..................................................................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Specified as below, All Shops,All Outlets, Item discount + Check discount,All Discount</li>
+<li><span class="badge bg-only">仅最终版</span> Types,Revenue select All: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Last business day, Multiple Shops,Multiple Outlets, Item discount,Multiple Discount</li>
+<li><span class="badge bg-only">仅最终版</span> Types,Revenue select Advance order: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Last month, Single Shop,Single Outlet, Item discount,Single Discount Type,Revenue select</li>
+<li><span class="badge bg-only">仅最终版</span> Non-revenue: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> — 3 —</li>
+<li><span class="badge bg-only">仅最终版</span> 1.4. Current business day, Single Shop,Single Outlet, Check discount,Single Discount</li>
+<li><span class="badge bg-only">仅最终版</span> Type,Revenue select Revenue: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2. The exported file displayed correctly: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> BUG Repeated Result(s):Opening the exported file will result in an error</li>
+<li><span class="badge bg-only">仅最终版</span> BUG Fixed Result(s): Exporting files will display data correctly</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Excel(XLS): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Word: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.3. PDF: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> — 4 —</li>
+<li><span class="badge bg-only">仅最终版</span> 2.4. PPT: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Successfully export preset parameter report: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1. Excel (XLS):</li>
+<li><span class="badge bg-only">仅最终版</span> 3.2. PDF:</li>
+<li><span class="badge bg-only">仅最终版</span> 3.3. HTML:</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>草稿环境</strong><pre>Test Environment
+• Version: v1.0.0
+• Browser: Chrome 114.0.0.0, Firefox 114.0.0.0, Edge 114.0.0.0
+• Environment: HQ Test Environment, Local Test Environment</pre></div>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+ Browser
+o Chrome Browser Version: 149.0.7827.158 (official build)
+o Microsoft Edge Version: 150.0.4078.48
+o Firefox Browser Version: 151.0.4
+Test Environment
+BUG Repeated by QC Test Environment: 1.2.114.0
+BUG Fixed Testing QC Test Environment: 1.2.115.0(trunk and branch)
+Parameters Verification
+Parameter Action Expect Result
+Date type Pick up with Current business day Display Current business day data
+Pick up with Last business day Display Last business day data
+Pick up with Last month Display Last month data
+Pick up with specified as below Display specified period day data
+Shops Select all shops Display all shops data
+Select a single shop Display single shop data
+Select multiple shops Display multiple shops data
+Outlets Select all outlets Display all outlets data
+Select a single outlet Display single outlet data
+Select multiple outlets Display multiple outlets data
+Discount Select Item discount + Check discount Display all discount data
+Select Item discount Display item discount data
+Select Check discount Display check discount data
+Discount type Select all discount type Display all discount type data
+Select a single discount type Display single discount type data
+— 5 —
+Parameter Action Expect Result
+Select multiple discount type Display multiple discount type data
+Revenue/Non-Revenue Select All Display all order data
+Select Revenue Display only revenue order data
+Select Non-Revenue Display only non-revenue order data
+Select Advance order Display advance order data
+Data Verification
+Field Expect Result
+Report Title
+Show corresponding report title by selection [Date type / Shops / Outlets]
+- Show Report Name
+- If select a single shop show shop name, else no show
+- If select a single outlet show outlet name, else no show
+- If select one day show target date, select range show target range date
+Outlet: Show corresponding outlet, format: [Outlet: Outlet Name]
+Discount: Show discount or extra charge name, breakdown it
+Check# Show the prefix check number.
+Date Show business day; format is determined by the settings.
+Apply Time Show apply discount location date and time; format is determined by the settings.
+Apply User Show apply discount employee last name and first name.
+Discount Reason
+Show the discount reason
+-POS System >> Discount Setup >> Discount Reasons
+-POS System >> Ordering Setup >> Config by Location >> Discount Reason Setting
+Acct# Show use On Credit /Duty Meal user's number
+Account Show use On Credit /Duty Meal user’s name (Last Name + First Name)
+Guests Show the number of covers by check.
+<Item Department
+Name> Discount Show department discount or extra charge amount for department
+Discount Total Count of all discounts or extra charge.
+<Item Department
+Name> Gross
+Revenue
+Show item sales amount for department.
+Total Item Revenue Count of all item sales amount.
+Sub Total Show the sum of each column
+Guests Show number of total covers by outlet
+<Item Department
+Name> Discount Show discount and extra charge total amount by outlet
+Grand Total Count of all item sales total amount by outlet
+<Item Department
+Name> Gross
+Revenue
+Count of all department item sales amount by outlet
+Grand Total Count of all item sales amount by outlet
+Shop Show corresponding outlet, format: [Shop: Shop Name]
+Guests Show number of total covers by shop
+<Item Department
+Name> Discount Count of all discount and extra charge total amount by shop
+Grand Total Count of all item sales total amount by shop
+<Item Department
+Name> Gross
+Revenue
+Count of all department item sales amount by shop
+Grand Total Count of all item sales amount by shop
+** END OF REPORT**
+Printed at: Show print date and time of the local server; format is determined by the settings.
+(System Management->System Configuration->Report Module->Date Format and Time
+Format)
+Printed by: Show operator last name and first name
+Report Code Show report Code (System Management->System Configuration->Report
+Module->Show Footer Report Code: Yes)
+P. Show page number
+Export Verification
+Type Expect Result
+Excel Support to export to Excel(.xls) file
+PDF Support to export to PDF file
+Word Support to export to Word file
+PostScript Support to export to PS file
+PowerPoint Support to export to PowerPoint file
+Print Verification
+Type Expect Result
+HTML Support HTML format printing
+PDF Support PDF format printing
+Language Verification
+Preferred Language Expect Result
+English The page language is displayed in English, including hint
+Chinese (Traditional) The page language is displayed in Chinese (Traditional), including hint
+Chinese (Simplified) The page language is Display in Chinese (Simplified), include hint
+— 6 —
+Sample
+Parameter Sample
+Report Sample
+Requirements Traceability
+ V1.2.115.0 HERO-64286
+ V1.2.110.0 HERO-59832
+ V1.2.61.0 HERO-25659
+ V1.2.51.0 HERO-18696</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:07　·　Sprint: 65587</p>
+</body></html>

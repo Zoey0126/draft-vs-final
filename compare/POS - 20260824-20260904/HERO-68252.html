@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-68252 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-68252 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-68252_20260914_092415.docx　<strong>最终版</strong>：HERO-68252 Test Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 8 用例 / 最终版 79 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> IP2COM - Recover USB printing after printer power-off; cleaner service stop; optional auto-restart for long disconnect Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Functional Testing</li>
+<li><span class="badge bg-only">仅草稿</span> 1. USB Printer Reconnect After Power Cycle</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Printing Resumes Automatically After Printer Power-Off and Power-On</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Repeated Power Cycles and Short USB Disconnects Reconnect Reliably</li>
+<li><span class="badge bg-only">仅草稿</span> 3.1. Watchdog Disabled by Default Keeps Retrying Without Service Restart</li>
+<li><span class="badge bg-only">仅草稿</span> 3.2. Watchdog Enabled Restarts the Service with Progressive Intervals</li>
+<li><span class="badge bg-only">仅草稿</span> 3.3. Existing restart_service_on_init_error Option Remains Unchanged</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> — 1 —</li>
+<li><span class="badge bg-only">仅最终版</span> HERO-68252 Test Report</li>
+<li><span class="badge bg-only">仅最终版</span> Tester:More.Luo</li>
+<li><span class="badge bg-only">仅最终版</span> UpdateTime:2026-09-24</li>
+<li><span class="badge bg-only">仅最终版</span> Contents</li>
+<li><span class="badge bg-only">仅最终版</span> 30s:Passed.......................................................................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> operations.:Passed...........................................................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> power-on:Passed..............................................................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> time:Passed......................................................................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> IP2COM Service:Passed.................................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> F7.1. Serial printer:Passed.......................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> F7.2. Windows printer:Passed..................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> F9.1. Printbillsuccessfully:Passed..........................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> F9.2. Printkitchenslip successfully:Passed............................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> F9.3. Printreceiptsuccessfully:Passed....................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> F9.4. Printaction slipsuccessfully:Passed..............................................................................................8</li>
+<li><span class="badge bg-only">仅最终版</span> F9.5. Printreportsuccessfully:Passed.....................................................................................................8</li>
+<li><span class="badge bg-only">仅最终版</span> F7.6. Printtestingslip successfully:Passed.............................................................................................8</li>
+<li><span class="badge bg-only">仅最终版</span> 15s > fixed at 30s: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. /local/hero_printing/ip2comsvc/conf/config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. In section[setup]</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Add “restart_service_on_long_disconnect=0”or"restart_service_on_long_disconnect"does</li>
+<li><span class="badge bg-only">仅最终版</span> notexist</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Printerstatus isnormal</li>
+<li><span class="badge bg-only">仅最终版</span> printing operations.: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. /local/hero_printing/ip2comsvc/conf/config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. In section[setup]</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Add “restart_service_on_long_disconnect=0”or"restart_service_on_long_disconnect"does</li>
+<li><span class="badge bg-only">仅最终版</span> notexist</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Printerstatus isnormal</li>
+<li><span class="badge bg-only">仅最终版</span> recovers after power-on: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. /local/hero_printing/ip2comsvc/conf/config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. In section[setup]</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Add “restart_service_on_long_disconnect=0”or"restart_service_on_long_disconnect"does</li>
+<li><span class="badge bg-only">仅最终版</span> notexist</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Printerstatus isnormal</li>
+<li><span class="badge bg-only">仅最终版</span> — 4 —</li>
+<li><span class="badge bg-only">仅最终版</span> gaps over time: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. /local/hero_printing/ip2comsvc/conf/config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. In section[setup]</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Add “restart_service_on_long_disconnect=1”</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Printerstatus isnormal</li>
+<li><span class="badge bg-only">仅最终版</span> restart HERO IP2COM Service: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. /local/hero_printing/ip2comsvc/conf/config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. In section[setup]</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Add “restart_service_on_long_disconnect=0”or“restart_service_on_long_disconnect=1”or</li>
+<li><span class="badge bg-only">仅最终版</span> “restart_service_on_long_disconnect”doesnot exist</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Printerstatus isnormal</li>
+<li><span class="badge bg-only">仅最终版</span> F7.1. Serial printer: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. /local/hero_printing/ip2comsvc/conf/config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. In section[setup]</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Add “restart_service_on_long_disconnect=0”or“restart_service_on_long_disconnect=1”or</li>
+<li><span class="badge bg-only">仅最终版</span> “restart_service_on_long_disconnect”doesnot exist</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Printerstatus isnormal</li>
+<li><span class="badge bg-only">仅最终版</span> F7.2. Windows printer: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. /local/hero_printing/ip2comsvc/conf/config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. In section[setup]</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Add “restart_service_on_long_disconnect=0”or“restart_service_on_long_disconnect=1”or</li>
+<li><span class="badge bg-only">仅最终版</span> “restart_service_on_long_disconnect”doesnot exist</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Printerstatus isnormal</li>
+<li><span class="badge bg-only">仅最终版</span> (untitled)</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. /local/hero_printing/ip2comsvc/conf/config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. In section[setup]</li>
+<li><span class="badge bg-only">仅最终版</span> — 7 —</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Add “restart_service_on_long_disconnect=1”</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Printerstatus isnormal</li>
+<li><span class="badge bg-only">仅最终版</span> (untitled)</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. /local/hero_printing/ip2comsvc/conf/config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. In section[setup]</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Add “restart_service_on_long_disconnect=0”or“restart_service_on_long_disconnect=1”or</li>
+<li><span class="badge bg-only">仅最终版</span> “restart_service_on_long_disconnect”doesnot exist</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Printerstatus isnormal</li>
+<li><span class="badge bg-only">仅最终版</span> F9.1. Print bill successfully: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F9.2. Print kitchen slip successfully: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F9.3. Print receipt successfully: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F9.4. Print action slip successfully: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F9.5. Print report successfully: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F7.6. Print testing slip successfully: Passed</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+ShijiWorkstation
+DeviceModel:HK5620
+DeviceOSVersion: Windows 11IoTEnterprise LTSC
+POSClientVersion: V1.2.114.0
+Test Environment
+QCOfficeServerTrunk &Branchversion</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:01　·　Sprint: 65586</p>
+</body></html>

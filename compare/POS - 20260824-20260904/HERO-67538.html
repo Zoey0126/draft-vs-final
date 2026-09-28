@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-67538 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-67538 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-67538_20260914_092415.docx　<strong>最终版</strong>：HERO-67538 Test Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 7 用例 / 最终版 11 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> Cloud hosted (Offline Mode) [Phase 3] - Support sync park order Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Functional Testing</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Park Order Sync from CH to SS</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Park Orders Sync from Cloud Hosted to Smart Station When Not in Standalone Mode</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. SS Receives New Park Orders from MQ After Switching to SS During CH Downtime</li>
+<li><span class="badge bg-only">仅草稿</span> 4.1. No CH to SS Park Order Sync While in Standalone Mode</li>
+<li><span class="badge bg-only">仅草稿</span> 4.2. Leaving Standalone Mode Triggers SS to CH Park Order Sync</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> — 1 —</li>
+<li><span class="badge bg-only">仅最终版</span> HERO-67538 Test Report</li>
+<li><span class="badge bg-only">仅最终版</span> Date time: 2026-09-14</li>
+<li><span class="badge bg-only">仅最终版</span> Author: Ryan.XIE</li>
+<li><span class="badge bg-only">仅最终版</span> Contents</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. If not in standalone mode, system will auto sync parking orders from CH to SS................................ ....... 2</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. When leaving standalone mode, system will sync parking orders from SS to CH ................................ .... 3</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. If not in standalone mode, system will auto sync parking orders from CH to SS</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. When leaving standalone mode, system will sync parking orders from SS to CH</li>
+<li><span class="badge bg-only">仅最终版</span> 7. It is also possible to park order through the API</li>
+<li><span class="badge bg-only">仅最终版</span> 8. Secondary Server leave standalone mode</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+• Shiji Workstation
+ Device Model: HK5610
+ Device OS: Windows 11 loT Enterprise LTSC
+• POS Client
+ Version: 1.2.115
+Test Environment
+• QC Office Server trunk</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:02　·　Sprint: 65586</p>
+</body></html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-67812 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-67812 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-67812_20260914_092415.docx　<strong>最终版</strong>：HERO-67812 Test Report & POS015 Discount Report By Check((Final)).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 12 用例 / 最终版 75 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> Report - POS015 Discount Report By Check - Apply decimal place and thousands separator per Report Format Configuration Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Report Information</li>
+<li><span class="badge bg-only">仅草稿</span> | Field | Value |</li>
+<li><span class="badge bg-only">仅草稿</span> | Name | Discount Report By Check |</li>
+<li><span class="badge bg-only">仅草稿</span> | Code | POS015 |</li>
+<li><span class="badge bg-only">仅草稿</span> Parameters to Validate</li>
+<li><span class="badge bg-only">仅草稿</span> | Parameters Name | Description | Options | Default |</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Verify Item Department columns keep exactly the configured decimal places (Decimal Place = 2)</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Verify Decimal Place = 1 displays values with exactly one decimal place</li>
+<li><span class="badge bg-only">仅草稿</span> 1.3. Verify Decimal Place = 0 removes all decimal places per existing rounding rules</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Verify thousands separators are applied when the Thousand Separator setting is enabled</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Verify no thousands separators are applied when the Thousand Separator setting is disabled</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> — 1 —</li>
+<li><span class="badge bg-only">仅最终版</span> POS015 Discount Report By Check</li>
+<li><span class="badge bg-only">仅最终版</span> Tester:Mila.Cao</li>
+<li><span class="badge bg-only">仅最终版</span> UpdateTime:2026-09-22</li>
+<li><span class="badge bg-only">仅最终版</span> Contents</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Decimal Placeis"1"andThousandsSeparatoris ",":Passed .......................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Decimal Placeis"2"andThousandsSeparatoris ".":Passed .......................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Decimal Placeis"3"andThousandsSeparatoris "Empty":Passed ..............................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 1.4. Decimal Placeis"4"andThousandsSeparatoris ",":Passed .......................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 1.5. Decimal Placeis"0"andThousandsSeparatoris ",":Passed .......................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 1.6. Decimal Placesupportoverride:Passed ..........................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 1.7. Update fromHQto LS,Decimal PlaceandThousandsSeparatorwith LSwillbeconsistentwith</li>
+<li><span class="badge bg-only">仅最终版</span> 1.8. SupportPOSDirectReportListing:Passed .....................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Parameter validation:Passed........................................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Currentbusiness day,All Shops,AllOutlets,Item discount+Check discount,AllDiscount</li>
+<li><span class="badge bg-only">仅最终版</span> types,RevenueselectAll,HideCheckTotalselectYes,Show MealPeriod isNo....................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Lastbusiness day,Multiple Shops,Multiple Outlets,Check discount,Multiple Discount</li>
+<li><span class="badge bg-only">仅最终版</span> types,RevenueselectRevenue,HideCheckTotalselectNo,ShowMealPeriodisYes.........................4</li>
+<li><span class="badge bg-only">仅最终版</span> 2.3. LastMonth,SingleShop,Single Outlet,Item discount,Single Discounttypes,RevenueselectNon-</li>
+<li><span class="badge bg-only">仅最终版</span> 2.4. Specifiedas below,Revenue selectAdvanceorder...........................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Supportconfigzone featuresbased on login user:Passed..........................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1. loginuserwhichbelongs tothe supremeconfig zone.......................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1.1. The supremeconfigzonevalidationdata................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1.2. The supremeconfigzoneincludes subconfigzone validationdata.......................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1.3. Switchto sublevelvalidation data............................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 3.2. loginuserwhichdoes notbelongtothe supremeconfig zone..........................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 3.2.1. The current configzonevalidationdata...................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Successfully exportpreset parameterreport:Passed.................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. Excel (XLSand XLSX):.......................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. PDF:....................................................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> 4.3. HTML:..................................................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> 4.4. CSV:....................................................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Decimal Placeand Thousands Separatorinthe automatic reportremain unchanged afterthe updated</li>
+<li><span class="badge bg-only">仅最终版</span> 6.1. Excel (XLSand XLSX):.......................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> 6.2. PDF:....................................................................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> 6.3. Word:...................................................................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> 6.4. CSV:....................................................................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> 6.5. PowerPoint:.........................................................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Decimal Place is "1" and Thousands Separator is "," : Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Decimal Place is "2" and Thousands Separator is "." : Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Decimal Place is "3" and Thousands Separator is "Empty" : Passed</li>
+<li><span class="badge bg-only">仅最终版</span> — 3 —</li>
+<li><span class="badge bg-only">仅最终版</span> 1.4. Decimal Place is "4" and Thousands Separator is "," : Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.5. Decimal Place is "0" and Thousands Separator is "," : Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.6. Decimal Place support override: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.7. Update from HQ to LS, Decimal Place and Thousands Separator with LS will be consistent with</li>
+<li><span class="badge bg-only">仅最终版</span> HQ: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.8. Support POS Direct Report Listing: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Current business day, All Shops,All Outlets,Item discount + Check discount,All Discount</li>
+<li><span class="badge bg-only">仅最终版</span> types,Revenue select All, Hide Check Total select Yes,Show Meal Period is No</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Last business day, Multiple Shops,Multiple Outlets,Check discount,Multiple Discount</li>
+<li><span class="badge bg-only">仅最终版</span> types,Revenue select Revenue, Hide Check Total select No,Show Meal Period is Yes</li>
+<li><span class="badge bg-only">仅最终版</span> 2.3. Last Month, Single Shop,Single Outlet,Item discount,Single Discount types,Revenue select</li>
+<li><span class="badge bg-only">仅最终版</span> Non-revenue</li>
+<li><span class="badge bg-only">仅最终版</span> 2.4. Specified as below,Revenue select Advance order</li>
+<li><span class="badge bg-only">仅最终版</span> — 5 —</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Support config zone features based on login user: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1. login user which belongs to the supreme config zone</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1.1. The supreme config zone validation data</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1.2. The supreme config zone includes sub config zone validation data</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1.3. Switch to sublevel validation data</li>
+<li><span class="badge bg-only">仅最终版</span> 3.2. login user which does not belong to the supreme config zone</li>
+<li><span class="badge bg-only">仅最终版</span> 3.2.1. The current config zone validation data</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Successfully export preset parameter report: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. Excel (XLS and XLSX):</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. PDF:</li>
+<li><span class="badge bg-only">仅最终版</span> 4.3. HTML:</li>
+<li><span class="badge bg-only">仅最终版</span> 4.4. CSV:</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Decimal Place and Thousands Separator in the automatic report remain unchanged after</li>
+<li><span class="badge bg-only">仅最终版</span> the updated version: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 6.1. Excel (XLS and XLSX):</li>
+<li><span class="badge bg-only">仅最终版</span> 6.2. PDF:</li>
+<li><span class="badge bg-only">仅最终版</span> 6.3. Word:</li>
+<li><span class="badge bg-only">仅最终版</span> 6.4. CSV:</li>
+<li><span class="badge bg-only">仅最终版</span> 6.5. PowerPoint:</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>草稿环境</strong><pre>Test Environment
+• Version: v1.0.0
+• Browser: Chrome 114.0.0.0, Firefox 114.0.0.0, Edge 114.0.0.0
+• Environment: HQ Test Environment, Local Test Environment</pre></div>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+ Browser
+o ChromeBrowserVersion:153.0.8010.48 (officialbuild)
+o MicrosoftEdgeVersion: 153.0.4234.48
+o Firefox BrowserVersion: 156.0
+Test Environment
+o QCCloud Serverls1/hqqccn1(trunk)
+o QCCloud Serverls3/hqqccn3(branch)
+Parameters Verification
+Parameter Action Expect Result
+Date type
+Pick upwith Currentbusiness day Displaycurrentbusiness day data
+Pick upwith Lastbusiness day Displaylastbusiness daydata
+Pick upwith Lastmonth Displaylastmonth businessday data
+Pick upwith specified business date Displayspecified business daydata
+Shops
+Selectall shops Displayallshops information
+Selecta single shop Displaya single shopinformation
+Selectmultiple shops Displaymultiple shops information
+Outlets
+Selectall outlets Displayalloutletsinformation
+Selecta single outlet Displaya single outletinformation
+Selectmultiple outlets Displaymultiple outletsinformation
+Discount
+SelectItem discount+Checkdiscount(Default) Displayitem discountand check
+discountinformation
+SelectItem discount Displayitem discountinformation
+SelectCheck discount Displaycheckdiscount information
+Discount types
+Selectall discounttypes Displayalldiscounttypes information
+Selecta single discounttypes Displaya single discounttypes
+information
+Selectmultiple discount types Displaymultiple discount types
+information
+Revenue/Non-revenue
+SelectAll(Default) Displayrevenue,non-revenue and
+advanceorderinformation
+SelectRevenue Displayrevenue information
+SelectNon-revenue Displaynon-revenue information
+SelectAdvanceorder Displayadvance orderinformation
+Hide Check Total SelectYes(Default) Hide check totalcolumn
+SelectNo Displaychecktotal column
+— 8 —
+Parameter Action Expect Result
+Show Meal Period Select Yes Display check meal period
+Select No(Default) Hide check meal period
+Data Verification
+Field Expect Result
+Shops
+Showspecifiedshopname(Note:ifparameter"shop"selectallormultiple shop->no
+show)
+Outlets Showoutletname
+Report Title Showcorrespondingreporttitle +(revenue type)
+Discount
+1.ifparameter"Discount" selectItem discount+Check discount,showItemdiscount+
+Checkdiscount
+2.ifparameter"Discount" selectItem discount,showItemdiscount
+3.ifparameter"Discount" selectCheck discount,show Checkdiscount
+Revenue type
+1.ifparameter"Revenue/Non-revenue" selectAll,showAll2.ifparameter"Revenue/Non-
+revenue"selectRevenue,showRevenue3.ifparameter"Revenue/Non-revenue"select
+Non-revenue,showNon-revenue4.ifparameter"Revenue/Non-revenue"selectAdvance
+order,showAdvance order
+Date Showspecifieddate
+Outlet Showoutletname
+Discount Showdiscountname(include extra charge)
+Table Number Showcheck table number(includetable ext)
+Check#
+Showcheck number
+-Discountcheckdata issorted by check numberfrom lowto high
+Date Showdiscountapplybusiness date
+Apply Time Showdiscountapplylocal system time
+Apply User Showdiscountapplyusername
+Member Number Showmembernumber
+Member Name Showmember Name(QCcannotverify 2700interfacebecauseit cannotbetested)
+Discount Reference
+Showdiscountreference(itsupportshow20 to30 characters)
+(Note:ifthere are multiplediscountreference forsamediscounttype on onecheck,itwill
+bespearated by",")
+1.SupportinputChinese characters fordiscountreference(e.g.{！~·@#/￥%……&*（；
+‘’：‘’“-——+=，。？《·~》、、|【*】”）})
+2.SupportinputEnglishcharacters fordiscountreference(e.g.[<*&(%$#@!~`^*_-
++=|\){|=+";':'",?/.%//\\{$&^}}>])
+3.Supportinputpure digitalfordiscount
+reference(e.g.01234567890445678799901235545788566523123545488755)4.Support
+inputpure letters (includinguppercaseand lowercase)fordiscount
+reference(e.g.AaBbCcDDddEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz)
+5.SupportinputChinese+English characters+lettersfordiscount reference(e.g.“a‘aB’B
+【iu】、、|、、·（ffGg）*&{|=+";‘:’",/WWjjkk\{$&^}”)
+6.SupportinputChinese+English characters+digital fordiscount
+reference(e.g.<{"22‘111’",“33'44'55”【66】、、|、、·（99）*&{|=+";‘:’",2023/07/31，
+66\77\88{$&^}>)
+7.SupportinputChinese+English characters+letters+digitalfordiscount
+reference(e.g.{“！~·(%$#@!~`^*_-+=|\)@#/￥%……&*2023/05-2023\09？
+《AfD·*#》、、|【VFad*】”})
+8.Supportinputpure Chinesefordiscount reference(e.g.长沙广州测试以太网网段网关子
+网掩码长沙广州测试以太网网段网关子网掩码)
+9.SupportinputChinese+English characters+letters+digital+Chinesefordiscount
+reference(e.g.1234567890+（、、。，·）=\@#%+'CeShi'"*&8<.iosdj>"-长沙测试
+\?|ChanSha/)
+Discount Reason
+Showdiscountreason(Note:ifthere aremultiple discountreason forsamediscounttype
+ononecheck,itwillbe separatedby ",")
+Guests Showcheck covernumber
+Item Department
+Name
+Showdiscountamountforitem department(Note:ifthe item don'tsettingitem department
+inplatform,departmentnamewillshow"Undefined")
+Apply decimalplace andthousands separatorperReportFormatConfiguration
+Total
+Showdiscounttotal forcheck
+Apply decimalplace andthousands separatorperReportFormatConfiguration
+Check Total Showcheck totalforcheck
+Meal Period Showcheck meal period(Show"Undefined" ifcheckperiod isundefined)
+Outlet Showoutletname
+Guests Showcovernumbertotal forspecified outlet
+Item Department
+Name
+Showdiscounttotal foritemdepartment forspecified outlet(Note:ifthe item don'tsetting
+itemdepartmentinplatform,department namewill show"Undefined")
+Apply decimalplace andthousands separatorperReportFormatConfiguration
+Grand Total
+Showdiscounttotal forspecified outlet
+Apply decimalplace andthousands separatorperReportFormatConfiguration
+Check Total Showcheck totalforspecifiedoutlet
+** END OF REPORT**
+Printed at: Showprintdate andtimeofthe localserver;formatis determined by the settings.
+(System Management->System Configuration->ReportModule->Date FormatandTime
+Format)
+Printed by: Showoperatorlastnameand firstname
+Report Code Showreport Code(System Management->System Configuration->Report
+Module->ShowFooterReportCode:Yes)
+P. Showpage number
+— 9 —
+Export Verification
+Type Expect Result
+Excel Supportto exporttoExcel(.xls)file
+Excel (.xlsx) Supportto exporttoExcel (.xlsx)file
+PDF Supportto exporttoPDF file
+Word Supportto exporttoWord file
+PostScript Supportto exporttoPS file
+PowerPoint Supportto exporttoPowerPoint file
+New CSV Supportto exporttoCSV file
+Supportexporting DatainCSVformat without titleheaders
+Print Verification
+Type Expect Result
+HTML SupportHTMLformatprinting
+PDF SupportPDF formatprinting
+Language Verification
+Preferred Language Expect Result
+English Thepage language isdisplayed inEnglish, including hint
+Chinese (Traditional) Thepage language isdisplayed inChinese (Traditional),including hint
+Chinese (Simplified) Thepage language isDisplayin Chinese(Simplified),include hint
+Sample
+Parameter Sample
+Report Sample
+Requirements Traceability
+ V1.2.115.0HERO-67812
+ V1.2.106.0 HERO-59749
+ V1.2.94.0 HERO-49860
+ V1.2.93.0 HERO-49267
+ V1.2.88.0 HERO-43777
+ V1.2.86.0 HERO-42231
+ V1.2.83.0 HERO-39190
+ V1.2.80.0 HERO-37161
+ V1.2.79.0 HERO-36768
+ V1.2.77.0 HERO-34935
+ V1.2.77.0 HERO-34741
+ V1.2.75.0 HERO-34101
+ V1.2.74.0 HERO-32885
+ V1.2.65.0 HERO-28701
+ V1.2.52.0 HERO-7818
+ V1.2.50.0 HERO-20201
+ V1.2.46.0 HERO-17582
+ V1.2.42.0 HERO-14512
+ V1.2.38.0 HERO-12154
+ V1.2.28.0 HERO-7961</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:07　·　Sprint: 65587</p>
+</body></html>

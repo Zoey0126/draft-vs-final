@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-55900 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-55900 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-55900_20260914_092415.docx　<strong>最终版</strong>：HERO-55900 Test Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 10 用例 / 最终版 28 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> POS Operation - Able to define payment type restriction for advanced order Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Functional Testing</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Configure Allowed Payment Methods in Advance Order Setting</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Settle advance order with an allowed payment method</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Settle advance order with a disallowed payment method</li>
+<li><span class="badge bg-only">仅草稿</span> 2.3. Retry settlement with an allowed payment method after a rejected one</li>
+<li><span class="badge bg-only">仅草稿</span> 3.1. Settle advance order when Allowed Payment Methods is empty</li>
+<li><span class="badge bg-only">仅草稿</span> 3.2. Settle advance order when Advance Order Setting does not exist</li>
+<li><span class="badge bg-only">仅草稿</span> 4.1. Normal check settlement is not affected by the restriction</li>
+<li><span class="badge bg-only">仅草稿</span> 4.2. Restriction applies only to the configured location scope</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> — 1 —</li>
+<li><span class="badge bg-only">仅最终版</span> HERO-55900 Test Report</li>
+<li><span class="badge bg-only">仅最终版</span> Tester: Mila. Cao</li>
+<li><span class="badge bg-only">仅最终版</span> Update Time :2026-09-21</li>
+<li><span class="badge bg-only">仅最终版</span> Contents</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Non-revenue payment type payment successful: Passed ............................................................... 2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1.1. Multiple payments: Passed .................................................................................................... 2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1.2. Single payment: Passed ........................................................................................................ 2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Non-revenue payment method not defined in Allowed Payment Method(s) prompts error</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Revenue payment type prompts error message "Payment must be non revenue on paying new</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. View the existing Advance Order Setting after upgrade - new configuration is <<< Not</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. Verify default value is empty when editing existing or adding new setup ....................................... 3</li>
+<li><span class="badge bg-only">仅最终版</span> Compatibility Testing ................................................................................................................................................ 4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Non-revenue payment type payment successful: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1.1. Multiple payments: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1.2. Single payment: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Non-revenue payment method not defined in Allowed Payment Method(s) prompts error</li>
+<li><span class="badge bg-only">仅最终版</span> "Selected payment method not allow for advanced order": Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Revenue payment type prompts error message "Payment must be non revenue on paying</li>
+<li><span class="badge bg-only">仅最终版</span> new advance order": Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. View the existing Advance Order Setting after upgrade - new configuration is <<< Not</li>
+<li><span class="badge bg-only">仅最终版</span> Specified >>></li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. Verify default value is empty when editing existing or adding new setup</li>
+<li><span class="badge bg-only">仅最终版</span> (untitled)</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. At Supreme Config Zone: Name is Mila non-Revenue 1 have tips</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. At Grade A > Hong Kong > Hotels: Name is override and set as Mila non-Revenue 1 have tips(Config</li>
+<li><span class="badge bg-only">仅最终版</span> zone)</li>
+<li><span class="badge bg-only">仅最终版</span> 2.3. At Mila1 > MIla11 > Mila111: Name is not override</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+ Shiji Workstation
+o Device Model: HK9600
+o Device OS version: Windows 11 IoT Enterprise LTSC
+o POS Client Version: V1.115.0
+ Browser
+o Chrome Browser Version: 153.0.8010.48 (official build)
+o Microsoft Edge Version: 153.0.4234.48
+o Firefox Browser Version: 156.0
+— 5 —
+Test Environment
+ QC Office Server trunk version</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:06　·　Sprint: 65586</p>
+</body></html>

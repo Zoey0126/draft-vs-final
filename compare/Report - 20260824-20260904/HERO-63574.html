@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-63574 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-63574 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-63574_20260914_092415.docx　<strong>最终版</strong>：HERO-63574 Test Report & CUS026 Detail Check Listing Report (ANZ)(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">1.2%</div><div class="label">整体匹配率（草稿 11 用例 / 最终版 82 用例）</div></div>
+<table><thead><tr><th>用例标题</th><th>标题</th><th>前置</th><th>步骤</th><th>结果</th><th>整体</th></tr></thead><tbody>
+<tr><td>| Name | Detail Check Listing Report (ANZ) |</td><td><span class="badge bg-mismatch">❌</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-match">匹配</span></td></tr>
+</tbody></table>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> CUS026 Detail Check Listing Report (ANZ) | Optimize loading performance Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Report Information</li>
+<li><span class="badge bg-only">仅草稿</span> | Field | Value |</li>
+<li><span class="badge bg-only">仅草稿</span> | Code | CUS026 |</li>
+<li><span class="badge bg-only">仅草稿</span> Report Functional Verification</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Report Loading Performance</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Verify CUS026 loading performance with default parameters</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Verify loading performance with a larger date range</li>
+<li><span class="badge bg-only">仅草稿</span> 1.3. Verify loading performance with multiple outlets</li>
+<li><span class="badge bg-only">仅草稿</span> 1.4. Verify loading performance with a high volume of checks</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> —1—</li>
+<li><span class="badge bg-only">仅最终版</span> Tester:More.Luo</li>
+<li><span class="badge bg-only">仅最终版</span> UpdateTime:2026-09-16</li>
+<li><span class="badge bg-only">仅最终版</span> Contents</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. By currentbusiness day,allshop,alloutlet,main department,allrevenue type:Passed...............4</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. By lastbusiness day,multiple shop,alloutlet,subdepartment,revenue type:Passed...................5</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. By specificdayrange,single shop,alloutlet,main department,non-revenue type:Passed..........5</li>
+<li><span class="badge bg-only">仅最终版</span> 1.4. By specificdayrange, single shop,multiple outlets,subdepartment, advanceorder:Passed.......6</li>
+<li><span class="badge bg-only">仅最终版</span> 1.5. By specificday,single shop,single outlet,main department,allrevenue type:Passed..................6</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Supportconfigzonefeaturesbased on loginuser.......................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. loginuserwhichbelongs tothe supremeconfig zone.......................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.1. The supremeconfigzonevalidationdata:Passed..................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.2. The supremeconfigzoneincludes subconfigzone validationdata:Passed........................7</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.3. Switchto sublevelvalidationdata:Passed.............................................................................8</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. loginuserwhichdoes notbelongtothe supremeconfig zone.......................................................10</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. The current configzonevalidationdata:Passed..................................................................10</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Reportcompatible withTiDB:Passed.........................................................................................................11</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Reportcompatible withMySQL: Passed....................................................................................................11</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Theoriginalpreset parameterreportdatais accurate andcan beopenednormally,andthe reporthas</li>
+<li><span class="badge bg-only">仅最终版</span> 6.1. PDF: Passed.....................................................................................................................................13</li>
+<li><span class="badge bg-only">仅最终版</span> 6.2. HTML:Passed..................................................................................................................................13</li>
+<li><span class="badge bg-only">仅最终版</span> 6.3. Excel(.xls):Passed...........................................................................................................................13</li>
+<li><span class="badge bg-only">仅最终版</span> 6.4. Excel(.xlsx):Passed.........................................................................................................................14</li>
+<li><span class="badge bg-only">仅最终版</span> 6.5. CSV:Passed.....................................................................................................................................15</li>
+<li><span class="badge bg-only">仅最终版</span> 7. Successfully exportreportfiles foreachformat.........................................................................................15</li>
+<li><span class="badge bg-only">仅最终版</span> 7.1. Excel: Passed...................................................................................................................................15</li>
+<li><span class="badge bg-only">仅最终版</span> 7.2. PDF: Passed.....................................................................................................................................16</li>
+<li><span class="badge bg-only">仅最终版</span> 7.3. PowerPoint:Passed.........................................................................................................................16</li>
+<li><span class="badge bg-only">仅最终版</span> 7.4. Word:Passed....................................................................................................................................17</li>
+<li><span class="badge bg-only">仅最终版</span> 7.5. CSV:Passed.....................................................................................................................................17</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Data volumes ofDBtable (pos_checks):20052</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Testingenvironment:</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Server(OfficeServer)</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.1. Operating systemversion:Windows 11HomeChineseVersion(X64)</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.2. Hardware configuration(CPU/Mem):Intel(R)Core (TM)i5-10500 CPU @3.10GHz, RAM</li>
+<li><span class="badge bg-only">仅最终版</span> 40GB,DISK:1425GB; available:717GB</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Testmachine</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. Operating systemversion:Windows 11IoTEnterprise LTSC</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.2. Hardware configuration(CPU/Mem):11thGenIntel(R)Core(TM) i3-1115G4E @3.00GHz</li>
+<li><span class="badge bg-only">仅最终版</span> (3.00 GHz),RAM 8GB</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.3. Browser: GoogleChrome153.0.8010.37 (official build)</li>
+<li><span class="badge bg-only">仅最终版</span> 3. TestingStrategy: Onthe premisethatthere are 20052data in the pos_checkstableofthe newand</li>
+<li><span class="badge bg-only">仅最终版</span> oldversions,theresponse timeof “CUS026”toquerythe samecheck iscompared</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. By current business day, all shop, all outlet, main department, all revenue type: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —5—</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. By last business day, multiple shop, all outlet, sub department, revenue type: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. By specific day range, single shop, all outlet, main department, non-revenue type: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —6—</li>
+<li><span class="badge bg-only">仅最终版</span> 1.4. By specific day range, single shop, multiple outlets, sub department, advance order: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.5. By specific day, single shop, single outlet, main department, all revenue type: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —7—</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Support config zone features based on login user</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. login user which belongs to the supreme config zone</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.1. The supreme config zone validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.2. The supreme config zone includes sub config zone validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —8—</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.3. Switch to sub level validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —9—</li>
+<li><span class="badge bg-only">仅最终版</span> —10—</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. login user which does not belong to the supreme config zone</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2.1. The current config zone validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —11—</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Report compatible with TiDB: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Report compatible with MySQL: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5. The original preset parameter report data is accurate and can be opened normally, and the</li>
+<li><span class="badge bg-only">仅最终版</span> report has been successfully modified to include new parameters: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 6.1. PDF: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 6.2. HTML: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 6.3. Excel(.xls): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —14—</li>
+<li><span class="badge bg-only">仅最终版</span> 6.4. Excel(.xlsx): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —15—</li>
+<li><span class="badge bg-only">仅最终版</span> 6.5. CSV: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7. Successfully export report files for each format</li>
+<li><span class="badge bg-only">仅最终版</span> 7.1. Excel: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —16—</li>
+<li><span class="badge bg-only">仅最终版</span> 7.2. PDF: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7.3. PowerPoint: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> —17—</li>
+<li><span class="badge bg-only">仅最终版</span> 7.4. Word: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7.5. CSV: Passed</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>草稿环境</strong><pre>Test Environment
+• Version: v1.0.0
+• Browser: Chrome 114.0.0.0, Firefox 114.0.0.0, Edge 114.0.0.0
+• Environment: HQ Test Environment, Local Test Environment</pre></div>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+ Browser
+o ChromeBrowserVersion:147.0.7727.56 (officialbuild)
+Test Environment
+ QCCloud Serverls1/hqqccn1(trunk)
+—18—
+ QCCloud Serverls3/hqqccn3(branch)
+Parameters Verification
+Parameter Action Expect Result
+Date type
+Pick upwith Currentbusiness day DisplayCurrentbusiness data
+Pick upwith Lastbusinessday DisplayLastbusinessdata
+Pick upwith specifiedbusiness day DisplaySpecifiedas belowdata
+Shops Selectallshops Displayall shops data
+Selectasingle shop Displaysingle shop data
+Selectmultiple shops Displaymultiple shopsdata
+Outlets Selectalloutlets Displayall outlets data
+Selectasingle outlet Displaysingle outletdata
+Selectmultiple outlets Displaymultiple outlets data
+Department Level
+Main department Departmentsales dataare displayed by
+main department
+Sub department Departmentsales dataare displayed by
+subdepartment
+Revenue/Non-revenue
+SelectAll Displayall revenuedata
+SelectRevenue Displayrevenue data
+SelectNon-revenue Displaynon-revenue data
+SelectAdvanceorder Displayadvancedata
+—19—
+Data Verification
+Filed Expect Result
+Report Title Show corresponding report title by selection [Date type / Shops / Outlets]
+- Show Report Name'Detail CheckListingReport(ANZ)(by selection*All/Revenue/Non-
+Revenue/Advance order)
+- If select a single shop show shop name,else no show
+- If select a single outlet show outlet name ,else no show
+- If select one day show target date, select range show target range date
+Order type Showcheckordertype byselection *All/Revenue/Non-Revenue/Advanceorder
+Outlet Showtargetoutlet name
+-breakdown by outlet
+Business day Showbusiness date
+-breakdown by date
+Chk# Showcheckperfix number
+-clicknumbercan jumpto 'PastDay CheckReport'Report
+Tbl Showtableand extension number
+Open Time Showopen checkdate andtime
+Close Time Showclose checkdate and time
+Cvr Showguest cover
+Sales Total Showitem sales total(include discountandextra charge amount,needminus inclusive
+tax)
+Svc Chrg Showadd onservice charge andsurcharge
+Tax Showadd onTax
+Incl. Tax ShowinclusiveTax
+Rnd ShowRounding amount
+Check Total Showchecktotal
+Disct Amt Showdiscount andextra charge amount
+Discount Type Showdiscount andextra charge name,(multiple discountusing ","forseparation)
+Pay Type Showpaymentname,multiple payment using","forseparation
+Pay Total Showpaymenttotal
+Tips Showpaymenttips andresidue
+Dine In Showitem sales amountbelongtodine in, minusitem discountandinclusive tax
+Take Away Showitem sales amountbelongtotakeaway,minus itemdiscountand inclusive tax
+Dine In/Cvr ShowDineIn/Coverdata
+<Department Name> Showitem sales amountby department,minus discount,extracharge andinclusive tax
+Grand Total Showallcolumnsthat specificoutlettotal inselectedbusiness days
+** END OF REPORT **
+Printed at Showrunning reportdate andtime(Formatset:System Management->System
+Configuration->ReportModule->DateFormatandTimeFormat)
+—20—
+Filed Expect Result
+Printed by Showrunning reportuserlastnameandfirstname
+Report Code
+ShowCUS026 -System Management>System Configuration >ReportModule>
+ShowFooterReportCode:
+Yes=show; No =hide
+P. Showpage number
+Export Verification
+Type Expect Result
+Excel Supportto exporttoexcel file
+Excel (.xlsx) Supportto exporttoExcel (.xlsx)file
+PDF Supportto exporttoPDF file
+Word Supportto exporttoWord file
+PostScript Supportto exporttoPS file
+PowerPoint Supportto exporttoPowerPoint file
+New CSV
+Supportto exporttoCSV file
+Supportexporting DatainCSVformat without titleheaders
+Print Verification
+Type Expect Result
+HTML SupportHTMLformatprinting
+PDF SupportPDF formatprinting
+Language Verification
+Preferred Language Expect Result
+English Thepage language isdisplayed inEnglish, including hint
+Chinese (Traditional) Thepage language isdisplayed inChinese (Traditional),including hint
+Chinese (Simplified) Thepage language isdisplayed inChinese (Simplified),includinghint
+—21—
+Sample
+Parameter Sample
+
+—22—
+Report Sample
+Requirements Traceability
+V1.2.115.0HERO-63574
+—23—
+V1.2.85.0HERO-42035
+V1.2.62.0HERO-26531
+V1.2.49.0HERO-19649
+V1.2.24.0HERO-6939
+V1.2.21.0HERO-5258</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:12　·　Sprint: 65587</p>
+</body></html>

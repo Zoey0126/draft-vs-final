@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-59786 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-59786 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-59786_20260916_183515.docx　<strong>最终版</strong>：HERO-59786 Test Report&POS289 Government Uniform Invoice Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 39 用例 / 最终版 100 用例）</div></div>
+<table><thead><tr><th>用例标题</th><th>标题</th><th>前置</th><th>步骤</th><th>结果</th><th>整体</th></tr></thead><tbody>
+<tr><td>1. All Default Parameters</td><td><span class="badge bg-mismatch">❌</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-mismatch">❌</span></td><td><span class="badge bg-match">✅</span></td><td><span class="badge bg-mismatch">差异</span></td></tr>
+</tbody></table>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> HERO-59786 POS Reports - Government Uniform Invoice Report Slip Format Additional Enhancements Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Report Information</li>
+<li><span class="badge bg-only">仅草稿</span> | Field | Value |</li>
+<li><span class="badge bg-only">仅草稿</span> | Name | Government Uniform Invoice Report (Slip Format) |</li>
+<li><span class="badge bg-only">仅草稿</span> | Code | POS289 |</li>
+<li><span class="badge bg-only">仅草稿</span> | Type | Improvement |</li>
+<li><span class="badge bg-only">仅草稿</span> Parameters to Validate</li>
+<li><span class="badge bg-only">仅草稿</span> | Parameters Name | Description | Options | Default |</li>
+<li><span class="badge bg-only">仅草稿</span> | Business Date | Select the business date for the report | [Date Picker] | Current Date |</li>
+<li><span class="badge bg-only">仅草稿</span> | Stations | Filter by station(s) | All Stations, Single Station, Multiple Stations | All Stations |</li>
+<li><span class="badge bg-only">仅草稿</span> | Cashiers | Filter by cashier(s) | All Cashiers, Single Cashier, Multiple Cashiers | All Cashiers |</li>
+<li><span class="badge bg-only">仅草稿</span> | Void Checks | Include voided checks in the report | Checkbox (Checked/Unchecked) | Checked |</li>
+<li><span class="badge bg-only">仅草稿</span> | Period / Cashier and Shift | Group by period, cashier, and shift | All, Single, Multiple | All |</li>
+<li><span class="badge bg-only">仅草稿</span> | Period | Filter by period | All Periods, Single Period, Multiple Periods | All Periods |</li>
+<li><span class="badge bg-only">仅草稿</span> | Shift | Filter by shift | All Shifts, Single Shift, Multiple Shifts | All Shifts |</li>
+<li><span class="badge bg-only">仅草稿</span> | Shift Number | Filter by shift number | All, Single, Multiple | All |</li>
+<li><span class="badge bg-only">仅草稿</span> | Sort column | Sort order of report data | [Column Selection] | Default |</li>
+<li><span class="badge bg-only">仅草稿</span> Data Fields to Validate</li>
+<li><span class="badge bg-only">仅草稿</span> | Fields Name | Fields Description | Field Calculation |</li>
+<li><span class="badge bg-only">仅草稿</span> | GUI Number | Government Uniform Invoice number | Direct display |</li>
+<li><span class="badge bg-only">仅草稿</span> | Check Number | POS check number associated with the GUI | Direct display |</li>
+<li><span class="badge bg-only">仅草稿</span> | Void Status | Indicates whether the GUI/check is voided | Direct display |</li>
+<li><span class="badge bg-only">仅草稿</span> | Amount | Transaction amount | Direct display |</li>
+<li><span class="badge bg-only">仅草稿</span> | Date/Time | Transaction date and time | Direct display |</li>
+<li><span class="badge bg-only">仅草稿</span> | Cashier | Cashier who processed the transaction | Direct display |</li>
+<li><span class="badge bg-only">仅草稿</span> | Station | Station where the transaction occurred | Direct display |</li>
+<li><span class="badge bg-only">仅草稿</span> Report Data Accuracy Verification</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Select current business date from Business Date</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Select All Stations from Stations</li>
+<li><span class="badge bg-only">仅草稿</span> 2.3. Select All Cashiers from Cashiers</li>
+<li><span class="badge bg-only">仅草稿</span> 2.4. Keep Void Checks checkbox checked</li>
+<li><span class="badge bg-only">仅草稿</span> 2.5. Select All from Period / Cashier and Shift</li>
+<li><span class="badge bg-only">仅草稿</span> 2.6. Select All Periods from Period</li>
+<li><span class="badge bg-only">仅草稿</span> 2.7. Select All Shifts from Shift</li>
+<li><span class="badge bg-only">仅草稿</span> 2.8. Select All from Shift Number</li>
+<li><span class="badge bg-only">仅草稿</span> 2.9. Select Default sort from Sort column</li>
+<li><span class="badge bg-only">仅草稿</span> 3. Click "Run" button</li>
+<li><span class="badge bg-only">仅草稿</span> 4. Verify report displays only voided GUI records</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> 1</li>
+<li><span class="badge bg-only">仅最终版</span> POS289 Government Uniform Invoice Report</li>
+<li><span class="badge bg-only">仅最终版</span> Testdate:2026-09-28</li>
+<li><span class="badge bg-only">仅最终版</span> Tester:Arsinoe</li>
+<li><span class="badge bg-only">仅最终版</span> Contents</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. AllDefaultParameters:Passed...........................................................................................................................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Lastbusinessday,multipleshops,multipleoutlets,multiplestations,OtherDefaultParameter:Passed.............................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Lastbusinessday,asingleshops,asingleoutlets,asinglestations,OtherDefaultParameter:Passed.............................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.4. Specifiedasbelow,allshops,alloutlets,allstations,OtherDefaultParameter,GUInumber:Passed.................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.5. Specifiedasbelow,allshops,alloutlets,allstations,OtherDefaultParameter,checknumber:Passed..............................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6. Specifiedasbelow,allshops,alloutlets,allstations,uncheckedShowVoidGUIOnly,checkedvoidchecks,OtherDefaultParameter:Passed..............................2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.7. Specifiedasbelow,allshops,alloutlets,allstations,uncheckedShowVoidGUIOnly,uncheckedvoidchecks,OtherDefaultParameter:Passed..........................3</li>
+<li><span class="badge bg-only">仅最终版</span> F1.8. Specifiedasbelow,allshops,alloutlets,allstations,checkedShowVoidGUIOnly,checkedvoidchecks,OtherDefaultParameter:Passed..................................3</li>
+<li><span class="badge bg-only">仅最终版</span> F1.9. Specifiedasbelow,allshops,alloutlets,allstations,uncheckedShowVoidGUIOnly,uncheckedvoidchecks,OtherDefaultParameter:Passed..........................3</li>
+<li><span class="badge bg-only">仅最终版</span> F1.10. Specifiedasbelow,allshops,alloutlets,allstations,selectperiod,allperiod,OtherDefaultParameter:Passed...............................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> F1.11. Specifiedasbelow,allshops,alloutlets,allstations,selectperiod,multipleperiod,OtherDefaultParameter:Passed......................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> F1.12. Specifiedasbelow,allshops,alloutlets,allstations,selectperiod,asingle,OtherDefaultParameter:Passed.................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.13. Specifiedasbelow,allshops,alloutlets,allstations,selectcashierandshift,selectcashier,allshift,OtherDefaultParameter:Passed..........................................4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.14. Specifiedasbelow,allshops,alloutlets,allstations,selectcashierandshift,selectcashier,currentshift,OtherDefaultParameter:Passed..................................4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.15. Specifiedasbelow,allshops,alloutlets,allstations,selectcashierandshift,selectcashier,specifiedasshiftnumber,shiftnumber,OtherDefaultParameter:</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16. Supportconfigzonefeaturesbasedonloginuser:includingbysupremeconfigzone,includingbysubconfigzone,bycurrentconfigzone..............................4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.1. Theloggedinuserbelongstothesupremeconfigzone..........................................................................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.1.1. Thesupremeconfigzonevalidationdata:Passed.......................................................................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.1.2. Thesupremeconfigzoneincludessubconfigzonevalidationdata:Passed..............................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.1.3. Switchtosublevelvalidationdata:Passed..................................................................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.2. Theloggedinuserdoesnotbelongstothesupremeconfigzone..........................................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.2.1. Thecurrentconfigzonevalidationdata:Passed..........................................................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.2.2. Thecurrentconfigzoneincludessubconfigzonevalidationdata:Passed.................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.2.3. Switchtosublevelvalidationdata:Passed..................................................................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. Exportreport(Excel):Passed................................................................................................................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. Exportreport(PDF):Passed.................................................................................................................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> F2.3. Exportreport(PowerPoint):Passed......................................................................................................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> F2.4. Exportreport(Word):Passed................................................................................................................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> F2.5. Exportreport(XLSX):Passed...............................................................................................................................................................................................................6</li>
+<li><span class="badge bg-only">仅最终版</span> F3.1. Printreport(HTML):Passed..................................................................................................................................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> F3.2. Printreport(PDF):Passed....................................................................................................................................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> F5.1. Html:Passed ........................................................................................................................................................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> F5.2. PDF:Passed.........................................................................................................................................................................................................................................7</li>
+<li><span class="badge bg-only">仅最终版</span> F5.3. Xls:Passed ..........................................................................................................................................................................................................................................8</li>
+<li><span class="badge bg-only">仅最终版</span> F5.4. Xlsx:Passed ........................................................................................................................................................................................................................................8</li>
+<li><span class="badge bg-only">仅最终版</span> F5.5. CSV:Passed ........................................................................................................................................................................................................................................8</li>
+<li><span class="badge bg-only">仅最终版</span> F10.1. Specifiedbusinessday(morethan7daysandwithin3yearsfromtoday)......................................................................................................................................9</li>
+<li><span class="badge bg-only">仅最终版</span> F10.1.1. Thebegindateoftheselectedbusinessdayis12daysfromtoday:Passed........................................................................................................................9</li>
+<li><span class="badge bg-only">仅最终版</span> F10.1.2. Thebegindateoftheselectedbusinessdayis3yearsfromtoday:Passed.......................................................................................................................10</li>
+<li><span class="badge bg-only">仅最终版</span> F10.2. Specifiedbusinessday(within7daysandmorethan3yearsfromtoday)....................................................................................................................................10</li>
+<li><span class="badge bg-only">仅最终版</span> F10.2.1. Currentbusinessday:Passed...............................................................................................................................................................................................10</li>
+<li><span class="badge bg-only">仅最终版</span> F10.2.2. Lastbusinessday:Passed....................................................................................................................................................................................................10</li>
+<li><span class="badge bg-only">仅最终版</span> F10.2.3. Thebegindateoftheselectedbusinessdayismorethan3yearsfromtoday:Passed.....................................................................................................10</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Last business day,multiple shops,multiple outlets,multiple stations,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Last business day,a single shops,a single outlets,a single stations,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.4. Specified as below,all shops,all outlets,all stations,Other Default Parameter,GUI number: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.5. Specified as below,all shops,all outlets,all stations,Other Default Parameter,check number: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6. Specified as below,all shops,all outlets,all stations,unchecked Show Void GUI Only,checked void checks,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 3</li>
+<li><span class="badge bg-only">仅最终版</span> F1.7. Specified as below,all shops,all outlets,all stations,unchecked Show Void GUI Only,unchecked void checks,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.8. Specified as below,all shops,all outlets,all stations,checked Show Void GUI Only,checked void checks,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.9. Specified as below,all shops,all outlets,all stations,unchecked Show Void GUI Only,unchecked void checks,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.10. Specified as below,all shops,all outlets,all stations,select period,all period,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.11. Specified as below,all shops,all outlets,all stations,select period,multiple period,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.12. Specified as below,all shops,all outlets,all stations,select period,a single,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.13. Specified as below,all shops,all outlets,all stations,select cashier and shift,select cashier,all shift,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.14. Specified as below,all shops,all outlets,all stations,select cashier and shift,select cashier,current shift,Other Default Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.15. Specified as below,all shops,all outlets,all stations,select cashier and shift,select cashier,specified as shift number,shift number,Other Default</li>
+<li><span class="badge bg-only">仅最终版</span> Parameter: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16. Support config zone features based on login user: including by supreme config zone, including by sub config zone, by current config zone</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.1. The logged in user belongs to the supreme config zone</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.1.1. The supreme config zone validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 5</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.1.2. The supreme config zone includes sub config zone validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.1.3. Switch to sub level validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.2. The logged in user does not belongs to the supreme config zone</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.2.1. The current config zone validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.2.2. The current config zone includes sub config zone validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.16.2.3. Switch to sub level validation data: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 6</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. Export report(Excel): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. Export report(PDF): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.3. Export report(PowerPoint): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.4. Export report(Word): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.5. Export report(XLSX): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 7</li>
+<li><span class="badge bg-only">仅最终版</span> F3.1. Print report(HTML): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F3.2. Print report(PDF): Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F5.1. Html: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F5.2. PDF: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 8</li>
+<li><span class="badge bg-only">仅最终版</span> F5.3. Xls: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F5.4. Xlsx: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F5.5. CSV: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 9</li>
+<li><span class="badge bg-only">仅最终版</span> (untitled)</li>
+<li><span class="badge bg-only">仅最终版</span> F10.1. Specified business day (more than 7 days and within 3 years from today)</li>
+<li><span class="badge bg-only">仅最终版</span> F10.1.1. The begin date of the selected business day is 12 days from today: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F10.1.2. The begin date of the selected business day is 3 years from today: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F10.2. Specified business day (within 7 days and more than 3 years from today)</li>
+<li><span class="badge bg-only">仅最终版</span> F10.2.1. Current business day: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F10.2.2. Last business day: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F10.2.3. The begin date of the selected business day is more than 3 years from today: Passed</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>草稿环境</strong><pre>Test Environment
+• Version: v1.0.0
+• Browser: Chrome 114.0.0.0, Firefox 114.0.0.0, Edge 114.0.0.0
+• Environment: Local Test Environment, HQ Test Environment, ER Test Environment</pre></div>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+ Browser
+o ChromeBrowserVersion:150.0.7871.187(officialbuild)
+o MicrosoftEdgeVersion:151.0.4129.72(officialbuild)
+o FirefoxBrowserVersion:153.0.3(officialbuild)
+Test Environment
+ QCCloudServerls1/hqqccn1(trunk)
+ QCOfficeServertrunkversion
+ QCCloudServerls3/hqqccn3(branch)
+ QCOfficeServerbranchversion
+Requirements Traceability
+ V1.2.115.0HERO-59786
+ V1.2.94.0HERO-41644</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:14　·　Sprint: 65587</p>
+</body></html>

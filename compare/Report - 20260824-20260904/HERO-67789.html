@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-67789 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-67789 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-67789_20260914_092415.docx　<strong>最终版</strong>：HERO-67789 Test Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 13 用例 / 最终版 3 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> TMS015 report - Support to show Generate Type of SMS and destination Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Report Information</li>
+<li><span class="badge bg-only">仅草稿</span> | Field | Value |</li>
+<li><span class="badge bg-only">仅草稿</span> | Name | Pre-Race Booking List |</li>
+<li><span class="badge bg-only">仅草稿</span> | Code | TMS015 |</li>
+<li><span class="badge bg-only">仅草稿</span> Parameters to Validate</li>
+<li><span class="badge bg-only">仅草稿</span> | Parameters Name | Description | Options | Default |</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Verify Generate Type displays System for auto-sent SMS records</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Verify Generate Type displays Manual for manually-sent SMS records</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Verify the actual destination phone number is displayed for manually triggered SMS</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Verify the reservation record phone number is displayed for auto-sent SMS</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Support Config Zone Compatibility</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Support Data Service Compatibility - MySQL and TiDB</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> HERO-67789 - TMS015 report - Support to show</li>
+<li><span class="badge bg-only">仅最终版</span> Generate Type of SMS and destination</li>
+<li><span class="badge bg-only">仅最终版</span> Content</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>草稿环境</strong><pre>Test Environment
+• Version: v1.0.0
+• Browser: Chrome 114.0.0.0, Firefox 114.0.0.0, Edge 114.0.0.0
+• Environment: HQ Test Environment, Local Test Environment</pre></div>
+<div class="field"><strong>最终版环境</strong><pre>Test Environment
+ Version: v1.2.115.0
+ Browser: Chrome(152.0.7977.76), Firefox(155.0.1), Edge(152.0.4191.66 )
+ Environment: HQ Test Environment</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:07　·　Sprint: 65587</p>
+</body></html>

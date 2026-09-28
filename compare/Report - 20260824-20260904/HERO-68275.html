@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-68275 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-68275 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-68275_20260916_090609.docx　<strong>最终版</strong>：HERO-68275 Test Report & POS028 Monthly Revenue Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 24 用例 / 最终版 34 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> POS028 Monthly Revenue Report - optimize loading performance and fix last/current month timezone Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Report Information</li>
+<li><span class="badge bg-only">仅草稿</span> | Field | Value |  |  |  |</li>
+<li><span class="badge bg-only">仅草稿</span> | Report Name | Monthly Revenue Report |  |  |  |</li>
+<li><span class="badge bg-only">仅草稿</span> | Report Code | POS028 |  |  |  |</li>
+<li><span class="badge bg-only">仅草稿</span> | JIRA Issue | HERO-68275 |  |  |  |</li>
+<li><span class="badge bg-only">仅草稿</span> | Component | REPORTS |  |  |  |</li>
+<li><span class="badge bg-only">仅草稿</span> | Issue Type | Bug |  |  |  |</li>
+<li><span class="badge bg-only">仅草稿</span> | Related Ticket | Ticket #1924232 (CS \ | JUMBO GROUP \ | REPORT \ | Auto Report generating incorrect data) |</li>
+<li><span class="badge bg-only">仅草稿</span> Parameters to Validate</li>
+<li><span class="badge bg-only">仅草稿</span> | Parameters Name | Description | Options | Default |</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. All Default Parameters</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Select All Outlets from Shops/Outlets.</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Select Last Month from Month Type.</li>
+<li><span class="badge bg-only">仅草稿</span> 3. Click "Run" button.</li>
+<li><span class="badge bg-only">仅草稿</span> 4. Verify the report header month and the row months.</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Single Outlet, Last Month Auto Report Sent on the 1st of the Month on UTC HQ</li>
+<li><span class="badge bg-only">仅草稿</span> 1.3. Single Outlet, Current Month Follows Hotel Local Calendar</li>
+<li><span class="badge bg-only">仅草稿</span> 1.4. Single Outlet, Specified Month Range Unchanged</li>
+<li><span class="badge bg-only">仅草稿</span> 1.5. Different Shop Time Offsets</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Single Month and Single Outlet on Large HQ Database</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Single Month and Multiple Outlets Loading</li>
+<li><span class="badge bg-only">仅草稿</span> 2.3. Data Correctness After Loading Optimization</li>
+<li><span class="badge bg-only">仅草稿</span> 2.4. Full Year and Multiple Outlets Loading</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> — 1 —</li>
+<li><span class="badge bg-only">仅最终版</span> POS028 Monthly Revenue Report</li>
+<li><span class="badge bg-only">仅最终版</span> Tester:Mila.Cao</li>
+<li><span class="badge bg-only">仅最终版</span> UpdateTime:2026-09-20</li>
+<li><span class="badge bg-only">仅最终版</span> Contents</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Infrasys servertimeandglobalsettings timeare differenttimezones:Passed ..............................2</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.1. Cross-month:Passed ...............................................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.2. Nocross month:Passed ..........................................................................................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Infrasys servertimeandglobalsettings timeare sametimezones:Passed ..................................3</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Parameter validation:Passed........................................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Lastbusiness day,AllShops,All Outlets,RevenueselectAll, GroupByOutletis checked,Show</li>
+<li><span class="badge bg-only">仅最终版</span> DepartmentselectNo,Departmentlevelis Sub department,AllDepartments,AttributesConditionis</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Currentmonth,Multiple Shops,MultipleOutlets,RevenueselectRevenue,Group ByOutletis</li>
+<li><span class="badge bg-only">仅最终版</span> unchecked,ShowDepartmentselectYes,Departmentlevelis Main department,Multiple</li>
+<li><span class="badge bg-only">仅最终版</span> Departments,AttributesConditionis Or,AttributeKey 1~10both Multiple,MultiplePayment Methods..4</li>
+<li><span class="badge bg-only">仅最终版</span> 2.3. LastMonth,SingleShop,Single Outlet,RevenueselectNon-revenue,Single Department,Attributes</li>
+<li><span class="badge bg-only">仅最终版</span> ConditionisAnd ,AttributeKey1~10 bothsingle,Single PaymentMethod..............................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 2.4. Specifiedas below..............................................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Infrasys server time and global settings time are different time zones: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.1. Cross-month: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.2. No cross month: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Infrasys server time and global settings time are same time zones: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Last business day, All Shops,All Outlets,Revenue select All, Group By Outlet is checked,Show</li>
+<li><span class="badge bg-only">仅最终版</span> Department select No,Department level is Sub department,All Departments,Attributes Condition is</li>
+<li><span class="badge bg-only">仅最终版</span> And,Attribute Key 1~10 both All,All Payment Methods</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Current month, Multiple Shops,Multiple Outlets,Revenue select Revenue, Group By Outlet is</li>
+<li><span class="badge bg-only">仅最终版</span> unchecked,Show Department select Yes,Department level is Main department,Multiple</li>
+<li><span class="badge bg-only">仅最终版</span> Departments,Attributes Condition is Or ,Attribute Key 1~10 both Multiple,Multiple Payment</li>
+<li><span class="badge bg-only">仅最终版</span> Methods</li>
+<li><span class="badge bg-only">仅最终版</span> 2.3. Last Month, Single Shop,Single Outlet,Revenue select Non-revenue,Single</li>
+<li><span class="badge bg-only">仅最终版</span> Department,Attributes Condition is And ,Attribute Key 1~10 both single,Single Payment Method</li>
+<li><span class="badge bg-only">仅最终版</span> 2.4. Specified as below</li>
+<li><span class="badge bg-only">仅最终版</span> Performance Testing</li>
+<li><span class="badge bg-only">仅最终版</span> 1. Optimization of running speed: Completed</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>草稿环境</strong><pre>Test Environment
+• Version: Sprint build containing the HERO-68275 fix
+• Browser: Chrome 114.0.0.0, Firefox 114.0.0.0, Edge 114.0.0.0
+• Environment: Local Test Environment, HQ Test Environment (UTC database), ER Test Environment</pre></div>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+ Browser
+o ChromeBrowserVersion:153.0.8010.48 (officialbuild)
+Test Environment
+BUGRepeated byQCTestEnvironment:1.2.114.0
+BUGFixedTestingQCTestEnvironment:1.2.115.0(trunk andbranch)
+Parameters Verification
+Parameter Action Expect Result
+Date type Pickupwith Lastbusiness day Showlastbusinessday data
+Pickupwith Currentmonth Showcurrentmonth businessday data
+Pickupwith Lastmonth Showlastmonthbusiness daydata
+Pickupwith specified business date Showspecified business day data
+Shops Selectall shops Showallshops information
+Selecta single shop Showasingle shopinformation
+Selectmultiple shops Showmultiple shops information
+Outlets Selectall outlets Showalloutlets information
+Selecta single outlet Showasingle outlet information
+Selectmultiple outlets Showmultiple outletsinformation
+Revenue/Non-revenue SelectRevenue Showrevenue information
+SelectNon-revenue Shownon-revenue informationand
+include advanceorder
+SelectAll Showallinformation
+Group By Outlet Tick(Default) Showdata breakdown by outletand
+business date
+Not tick Showdata breakdown only by
+business date
+Show Department SelectYes Showitem departmentsales
+information
+SelectNo Not showitem departmentsales
+information
+Department level SelectMain department Showmain departmentnameforitem
+department
+SelectSubdepartment Showsub departmentnameforitem
+department
+Department Selectall department Showalldepartmentinformation
+Selecta single department Showasingle departmentinformation
+Selectmultiple department Showmultiple departmentinformation
+Attributes
+Condition &
+Attribute Key
+Attributes ConditionselectAnd
+AttributeKeyselectAll
+Showinformationthat satisfiesall
+attribute keys
+Attributes ConditionselectAnd
+AttributeKeyselectmultiple
+Showinformationthat satisfiesallthe
+selectedmultiple attribute keys
+Attributes ConditionselectAnd
+AttributeKeyselectsingle
+Showinformationthat satisfiesallthe
+selectedsingle attribute key
+Attributes ConditionselectOr
+AttributeKeyselectAll
+Showinformationthat satisfiesall
+attribute keys
+Attributes ConditionselectOr
+AttributeKeyselectmultiple
+Showinformationthat satisfiesany
+multiple attribute keys selected
+Attributes ConditionselectOr
+AttributeKeyselectsingle
+Showinformationthat satisfiesany
+single attribute keyselected
+Payment Methods SelectAll(Default) Showallpaymentinformation
+Selecta single paymentmethod Showasingle paymentinformation
+Selectmultiple paymentmethods Showmultiple paymentinformation
+Data Verification
+Field Expect Result
+Shops Showspecifiedshopname
+(Note:ifparameter"shop"selectallormultiple shop ->no show)
+Report Title Showcorrespondingreporttitle "Monthly RevenueReport[RevenueType]"
+Outlet Showoutletname
+(Note:ifparameter"Outlet"selectallor multipleoutlets->no show)
+Date Showspecified date
+-DateFormatsetup:System Management>>System Configuration>>ReportModule
+"Date Format"
+Outlet Showoutletname
+Date Showbusinessdate
+-DateFormatsetup:System Management>>System Configuration>>ReportModule
+"Date Format"
+Day Showweekshortnameof businessdate
+Period Showitemsales total (itemgross salesremovecheckdiscount, itemdiscount and
+inclusivetax )groupby period
+(Note:ifthe periodis notset, show"Undefined")
+-Calculation:Item sales total=Item gross sales+checkdiscount+item discount+extra
+charge-inclusive tax
+Item Total Showall itemsales total group byperiod
+Serv Chrg Showaddonservice chargeamount +surcharge
+Inclusive S.C Showinclusive servicecharge
+Discount Showdiscountamount,include item discount,checkdiscountand extra charge
+Tax Showaddontax amount
+Incl Tax Showinclusive taxamount
+Rnd Showrounding amount
+Chks Total Showcheck total(include surcharge)
+Item Department
+name
+Showitemsales amountby department,remove itemdiscount andinclusive tax
+(Note:ifthe itemdepartmentis notset,show"Undefined")
+Payment method
+name
+Showthepaymenttotal forthe selected paymentmethod(Amount+Tips +Residue+
+surcharge)
+— 6 —
+Field Expect Result
+Depos. Showadvanceorderchecktotal,the amount shows negative value
+(Note:ifparameter"Revenue/Non-revenue"select"Non-revenue",willnotshow)
+Pay Total Showthepaymenttotal forthe selected paymentmethod
+Tips Showtipsandresidue
+Chks Showcheck number
+Avg Bill ShowItemTotal /Chks
+-Calculation:AvgBill =ItemTotal/Chks
+Guest Showthenumber ofcustomers onthe currentbusiness day
+Avg Guest ShowChecktotal /Guest
+-Calculation:AvgGuest=Check total /Guest
+Spoi. Showitemwastage qty *item price
+-Calculation:Spoi.=wastageqty *itemprice
+Grand Total Showall columnsthatspecificoutlettotal inselected businessdays
+** END OF REPORT**
+Printed at: Showprintdate andtimeofthe localserver;formatis determined by the settings.
+(System Management->System Configuration->ReportModule->Date FormatandTime
+Format)
+Printed by: Showoperatorlastnameand firstname
+Report Code Showreport Code(System Management->System Configuration->Report
+Module->ShowFooterReportCode:Yes)
+P. Showpage number
+Export Verification
+Type Expect Result
+Excel Supportto exporttoExcel(.xls)file
+Excel (.xlsx) Supportto exporttoExcel (.xlsx)file
+PDF Supportto exporttoPDF file
+Word Supportto exporttoWord file
+PostScript Supportto exporttoPS file
+PowerPoint Supportto exporttoPowerPoint file
+New CSV Supportto exporttoCSV file
+Supportexporting DatainCSVformat without titleheaders
+Print Verification
+Type Expect Result
+HTML SupportHTMLformatprinting
+PDF SupportPDF formatprinting
+Language Verification
+Preferred Language Expect Result
+English Thepage language isdisplayed inEnglish, including hint
+Chinese (Traditional) Thepage language isdisplayed inChinese (Traditional),including hint
+Chinese (Simplified) Thepage language isDisplayin Chinese(Simplified),include hint
+Sample
+Parameter Sample
+Report Sample
+Requirements Traceability
+ V1.2.115.0HERO-68275
+ V1.2.110.0HERO-63428
+ V1.2.108.0HERO-62452
+ V1.2.98.0HERO-51717
+ V1.2.87.0HERO-43333
+ V1.2.85.0HERO-41355
+ V1.2.85.0HERO-40607
+ V1.2.85.0HERO-40438
+ V1.2.83.0HERO-39178
+ V1.2.79.0HERO-36206
+ V1.2.77.0HERO-34539
+ V1.2.76.0HERO-10003
+ V1.2.56.0HERO-23058
+ V1.2.55.0HERO-22165
+ V1.2.50.0HERO-19108
+ V1.2.50.0HERO-18716
+ V1.2.50.0HERO-18723
+ V1.2.45.0,V1.2.46.0HERO-17125
+ V1.2.40.0HERO-14056
+ NoneHERO-9024
+ V1.2.17.0HERO-3689</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:06　·　Sprint: 65587</p>
+</body></html>

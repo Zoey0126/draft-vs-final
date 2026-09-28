@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-68315 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-68315 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-68315_20260914_092415.docx　<strong>最终版</strong>：HERO-68315 Test Report (Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 6 用例 / 最终版 15 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> TMS 2.0 - Incorrect change log info after change arrival cover Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Functional Testing</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Change Arrival Cover Operation</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Change arrival cover on a host-arrived reservation</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Change arrival cover without changing the value</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Change log records correct from and to values for arrival cover</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> HERO-68315 - TMS 2.0 - Incorrect change log info after</li>
+<li><span class="badge bg-only">仅最终版</span> change arrival cover</li>
+<li><span class="badge bg-only">仅最终版</span> Tester: Johnson Liu</li>
+<li><span class="badge bg-only">仅最终版</span> Date: 2026-09-14</li>
+<li><span class="badge bg-only">仅最终版</span> Content</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Verify change log records correct Arrival Cover change ...........................................1</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Verify change log omits Arrival Cover when value is unchanged .............................3</li>
+<li><span class="badge bg-only">仅最终版</span> Compatibility Testing ........................................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 1. Cross-Browser Compatibility .................................................................................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Verify Arrival Cover update and Change Log in Google Chrome ................................5</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Verify Arrival Cover update and Change Log in Mozilla Firefox ................................. 6</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Verify Arrival Cover update and Change Log in Microsoft Edge .................................7</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Verify change log records correct Arrival Cover change</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Verify change log omits Arrival Cover when value is unchanged</li>
+<li><span class="badge bg-only">仅最终版</span> (untitled)</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+1. Cross-Browser Compatibility
+1.1. Verify Arrival Cover update and Change Log in Google Chrome
+Prerequisite(s):
+1. Google Chrome browser is installed and updated to the latest version.
+2. A test reservation in 'Host Arrived' status with an assigned table and Arrival Cover of 4 is
+available.
+Step(s):
+1. Open TMS Operation in Google Chrome.
+2. Change the Arrival Cover from 4 to 2 and confirm the action.
+3. Open the 'Change Log' tab for the reservation.
+Test Result(s):
+1. The Arrival Cover updates successfully.
+2. The Change Log correctly displays "Arrival Cover : From 4 To 2" without any table
+unassignment errors.
+1.2. Verify Arrival Cover update and Change Log in Mozilla Firefox
+Prerequisite(s):
+1. Mozilla Firefox browser is installed and updated to the latest version.
+2. A test reservation in 'Host Arrived' status with an assigned table and Arrival Cover of 4 is
+available.
+Step(s):
+1. Open TMS Operation in Mozilla Firefox.
+2. Change the Arrival Cover from 4 to 2 and confirm the action.
+3. Open the 'Change Log' tab for the reservation.
+Test Result(s):
+1. The Arrival Cover updates successfully.
+2. The Change Log correctly displays "Arrival Cover : From 4 To 2" without any table
+unassignment errors.
+1.3. Verify Arrival Cover update and Change Log in Microsoft Edge
+Prerequisite(s):
+1. Microsoft Edge browser is installed and updated to the latest version.
+2. A test reservation in 'Host Arrived' status with an assigned table and Arrival Cover of 4 is
+available.
+Step(s):
+1. Open TMS Operation in Microsoft Edge.
+2. Change the Arrival Cover from 4 to 2 and confirm the action.
+3. Open the 'Change Log' tab for the reservation.
+Test Result(s):
+1. The Arrival Cover updates successfully.
+2. The Change Log correctly displays "Arrival Cover : From 4 To 2" without any table
+unassignment errors.
+Test Environment
+ Browser: Chrome, Firefox, Edge
+ Environment: HQ1(Trunk) Test Environment
+ Bug Reproduce Environment：HQ3(Branch)</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:14　·　Sprint: 75474</p>
+</body></html>

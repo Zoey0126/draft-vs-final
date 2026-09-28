@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-68158 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-68158 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-68158_20260915_143244.docx　<strong>最终版</strong>：HERO-68158 Test Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 16 用例 / 最终版 284 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> TMS 2.0 - Add deposit status and support refund with third party payment - Dev (5/5) Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Functional Testing</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Deposit Status Display Verification</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Verify Pending Deposit Status Display</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Verify Confirmed Deposit Status Display</li>
+<li><span class="badge bg-only">仅草稿</span> 1.3. Verify Refunded Deposit Status Display</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Initiate Refund through Third Party Payment Gateway</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Verify Status Changes After Refund</li>
+<li><span class="badge bg-only">仅草稿</span> 2.3. Verify Refund Amount Accuracy</li>
+<li><span class="badge bg-only">仅草稿</span> 3.1. Refund with VGS Payment Method</li>
+<li><span class="badge bg-only">仅草稿</span> 3.2. Refund with Credit Card Payment Method</li>
+<li><span class="badge bg-only">仅草稿</span> 3.3. Refund with Mixed Payment Method</li>
+<li><span class="badge bg-only">仅草稿</span> 4.1. Partial Refund Processing</li>
+<li><span class="badge bg-only">仅草稿</span> 4.2. Refund Cancellation</li>
+<li><span class="badge bg-only">仅草稿</span> 4.3. Concurrent Refund Attempts</li>
+<li><span class="badge bg-only">仅草稿</span> 4.4. Refund After Void</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> HERO-68158 - TMS 2.0 - Add deposit status and support</li>
+<li><span class="badge bg-only">仅最终版</span> refund with third party payment - Dev (5/5)</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Verify "Awaiting Refund in Deposit Workflow" Configuration ..................................... 2</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Verify "Awaiting Transfer in Deposit Workflow" Configuration ....................................4</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Verify the translation of "Awaiting Refund in Deposit Workflow" ................................ 6</li>
+<li><span class="badge bg-only">仅最终版</span> 1.4. Verify the translation of "Awaiting Transfer in Deposit Workflow" .............................. 8</li>
+<li><span class="badge bg-only">仅最终版</span> 1.5. Verify Function Authorities Setup for Refund and Transfer ......................................11</li>
+<li><span class="badge bg-only">仅最终版</span> 1.6. Verify the translation of Function Authorities Setup for Refund and Transfer .......... 12</li>
+<li><span class="badge bg-only">仅最终版</span> 1.7. Verify the translation of Function Authorities Setup for Refund and Transfer in Set</li>
+<li><span class="badge bg-only">仅最终版</span> 1.8. Verify Payment Transfer Reasons Setup ................................................................. 18</li>
+<li><span class="badge bg-only">仅最终版</span> 1.9. Verify Admin Navbar and Schedule Status Update Changes .................................. 20</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Deposit Refund Workflow and Segregation of Duties .........................................................21</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Verify Refund Workflow with "Awaiting Refund" Config Enabled (No Authority) ......21</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Verify Refund Workflow with "Awaiting Refund" Config Disabled (No Authority) .....27</li>
+<li><span class="badge bg-only">仅最终版</span> 2.3. Verify Refund Workflow with "Ask Authority" Function Setup .................................. 28</li>
+<li><span class="badge bg-only">仅最终版</span> 2.4. Verify Refund Workflow with "Ask Password/ Approval" Function Setup .................35</li>
+<li><span class="badge bg-only">仅最终版</span> 2.5. Verify Approver Actions (Accept/Reject/Cancel) for Awaiting Refund ......................37</li>
+<li><span class="badge bg-only">仅最终版</span> 2.6. Verify The translation of change log (Accept/Reject/Cancel) for Awaiting Refund is</li>
+<li><span class="badge bg-only">仅最终版</span> 2.7. Verify No Refund Workflow .......................................................................................46</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Deposit Transfer Workflow and Segregation of Duties .......................................................47</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1. Verify Transfer Workflow with "Awaiting Transfer" Config Enabled (No Authority) .. 47</li>
+<li><span class="badge bg-only">仅最终版</span> 3.2. Verify Transfer Workflow with "Awaiting Transfer " Config Disabled (No Authority) 54</li>
+<li><span class="badge bg-only">仅最终版</span> 3.3. Verify Transfer Workflow with "Ask Authority" Function Setup .................................55</li>
+<li><span class="badge bg-only">仅最终版</span> 3.4. Verify Transfer Workflow with "Ask Password/ Approval" Function Setup ...............62</li>
+<li><span class="badge bg-only">仅最终版</span> 3.5. Verify Approver Actions (Accept/Reject/Cancel) for Awaiting Transfer ....................64</li>
+<li><span class="badge bg-only">仅最终版</span> 3.6. Verify The translation of change log (Accept/Reject/Cancel) for Awaiting Refund is</li>
+<li><span class="badge bg-only">仅最终版</span> 3.7. Verify Transfer Target Reservation Selection and Payment Transfer Reason ........ 72</li>
+<li><span class="badge bg-only">仅最终版</span> 4. TMS Payment List and Details ............................................................................................75</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. Verify Payment List Independent Page and Filters .................................................. 75</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. Verify Payment List Columns and Amount Calculations .......................................... 78</li>
+<li><span class="badge bg-only">仅最终版</span> 4.3. Verify sort of Payment List Columns .........................................................................80</li>
+<li><span class="badge bg-only">仅最终版</span> 4.4. Verify Payment Details Side Panel and Auto-Refresh via Webhook ........................84</li>
+<li><span class="badge bg-only">仅最终版</span> 4.5. Verify Payment List View authority ........................................................................... 85</li>
+<li><span class="badge bg-only">仅最终版</span> 4.6. Verify The translation of Payment List View ............................................................. 88</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Deposit Refund Workflow for offline payment .....................................................................92</li>
+<li><span class="badge bg-only">仅最终版</span> 5.1. Verify Refund Workflow with "Awaiting Refund" Config Enabled (No Authority) ......92</li>
+<li><span class="badge bg-only">仅最终版</span> 6. POS Payment API Integration .............................................................................................95</li>
+<li><span class="badge bg-only">仅最终版</span> 6.1. Verify POS API `DepositsByReservationId` for Consumption and Refund ..............95</li>
+<li><span class="badge bg-only">仅最终版</span> 6.2. Verify POS API Error Handling for Missing, Not Found, and Invalid Parameters .. 103</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Verify TMS Payment List and Workflows in Chrome ..............................................112</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Verify TMS Payment List and Workflows in Firefox ................................................112</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Verify TMS Payment List and Workflows in Edge .................................................. 114</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Verify "Awaiting Refund in Deposit Workflow" Configuration</li>
+<li><span class="badge bg-only">仅最终版</span> 3. After step 4, Edit successfully.</li>
+<li><span class="badge bg-only">仅最终版</span> 5. After step 4, View successfully.</li>
+<li><span class="badge bg-only">仅最终版</span> 5. After step 6, Delete successfully.</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Verify "Awaiting Transfer in Deposit Workflow" Configuration</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Verify the translation of "Awaiting Refund in Deposit Workflow"</li>
+<li><span class="badge bg-only">仅最终版</span> 1.4. Verify the translation of "Awaiting Transfer in Deposit Workflow"</li>
+<li><span class="badge bg-only">仅最终版</span> 1.5. Verify Function Authorities Setup for Refund and Transfer</li>
+<li><span class="badge bg-only">仅最终版</span> 1.6. Verify the translation of Function Authorities Setup for Refund and Transfer</li>
+<li><span class="badge bg-only">仅最终版</span> 1.7. Verify the translation of Function Authorities Setup for Refund and Transfer in</li>
+<li><span class="badge bg-only">仅最终版</span> Set Function Authorities</li>
+<li><span class="badge bg-only">仅最终版</span> 1.8. Verify Payment Transfer Reasons Setup</li>
+<li><span class="badge bg-only">仅最终版</span> 2. The reason appears in the Payment Transfer Reasons listing.</li>
+<li><span class="badge bg-only">仅最终版</span> 1.9. Verify Admin Navbar and Schedule Status Update Changes</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Verify Refund Workflow with "Awaiting Refund" Config Enabled (No Authority)</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.1. You do not have refund authority. After confirmation, this payment will be</li>
+<li><span class="badge bg-only">仅最终版</span> changed to awaiting refund and requires approval before the refund can proceed.</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.2. 你沒有退款權限。確認後此付款會改為等候退款，須經批核才可退款。</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.3. 您没有退款权限。确认后此付款将改为等候退款，须经审批才可退款。</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.4. 返金権限がありません。確認後、この支払いは返金待ちとなり、承認後に</li>
+<li><span class="badge bg-only">仅最终版</span> 返金されます。</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.5. 환불 권한이 없습니다. 확인 후 이 결제는 환불 대기로 변경되며, 승인 후에</li>
+<li><span class="badge bg-only">仅最终版</span> 환불이 진행됩니다.</li>
+<li><span class="badge bg-only">仅最终版</span> 3. After step 4, The payment status changes to "Awaiting Refund".</li>
+<li><span class="badge bg-only">仅最终版</span> 4. After step 5/ 6, A reservation change log and HQ audit log are generated for the awaiting</li>
+<li><span class="badge bg-only">仅最终版</span> refund request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. A reservation change log is generated for the awaiting refund request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.1. [EDIT] Deposit Status : Completed, Payment Method : new payby 2,</li>
+<li><span class="badge bg-only">仅最终版</span> Amount : 22, Third Party Payment Action : Awaiting Refund, Third Party Payment</li>
+<li><span class="badge bg-only">仅最终版</span> Method : Prepaid, Refund Amount : 22</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.2. [編輯] 保證金狀態 : 完成, 付款方法 : new payby 2, 金額 : 22, 第三方</li>
+<li><span class="badge bg-only">仅最终版</span> 支付行為 : 等候退款, 第三方支付方式 : Prepaid, 退款金額 : 22</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.3. [编辑] 保证金状态 : 完成, 付款方法 : new payby 2, 金额 : 22, 第三方</li>
+<li><span class="badge bg-only">仅最终版</span> 支付行为 : 等候退款, 第三方支付方式 : Prepaid, 退款金额 : 22</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.4. [編集] 証拠金の状態 : 完了です, 支払方法 : new payby 2, 金額 : 22,</li>
+<li><span class="badge bg-only">仅最终版</span> 第三者支払アクション : 返金待ち, サードパーティの支払い方法 : Prepaid, 返金</li>
+<li><span class="badge bg-only">仅最终版</span> 額 : 22</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.5. [편집] 마진 상태입니다 : 완료, 결제 방법 : new payby 2, 금액 : 22,</li>
+<li><span class="badge bg-only">仅最终版</span> 제 3 자 결제 조치 : 환불 대기, 제 3 자 결제 방법 : Prepaid, 환불 금액 : 22</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. A reservation audit log is generated for the awaiting refund request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Verify Refund Workflow with "Awaiting Refund" Config Disabled (No Authority)</li>
+<li><span class="badge bg-only">仅最终版</span> 2.3. Verify Refund Workflow with "Ask Authority" Function Setup</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. A reservation change log is generated for the awaiting refund request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.1. [EDIT] Deposit Status : Voided (Refunded), Payment Method : new</li>
+<li><span class="badge bg-only">仅最终版</span> payby, Amount : 20, Third Party Payment Action : Refund, Third Party Payment</li>
+<li><span class="badge bg-only">仅最终版</span> Method : Prepaid, Refund Amount : 20</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.2. [編輯] 保證金狀態 : 作廢（退款）, 付款方法 : new payby, 金額 : 20,</li>
+<li><span class="badge bg-only">仅最终版</span> 第三方支付行為 : 退款, 第三方支付方式 : Prepaid, 退款金額 : 20</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.3. [编辑] 保证金状态 : 作废（退款）, 付款方法 : new payby, 金额 : 20,</li>
+<li><span class="badge bg-only">仅最终版</span> 第三方支付行为 : 退款, 第三方支付方式 : Prepaid, 退款金额 : 20</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.4. [編集] 証拠金の状態 : 無効(返金), 支払方法 : new payby, 金額 : 20,</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.5. 총 마진 : 보낸 사람 123 받는 사람 0, [편집] 마진 상태입니다 : 사용</li>
+<li><span class="badge bg-only">仅最终版</span> 되지 않음, 결제 방법 : new payby 2, 금액 : 123, 제 3 자 결제 조치 : 만료됨, 제 3</li>
+<li><span class="badge bg-only">仅最终版</span> 자 결제 방법 : Prepaid</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. A reservation audit log is generated for the awaiting refund request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 2.4. Verify Refund Workflow with "Ask Password/ Approval" Function Setup</li>
+<li><span class="badge bg-only">仅最终版</span> 2.5. Verify Approver Actions (Accept/Reject/Cancel) for Awaiting Refund</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Repeat the process for another awaiting refund payment, but click "Reject" button> Click</li>
+<li><span class="badge bg-only">仅最终版</span> “Confirm”> Check change log> Check audit log</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Click "Cancel Request"> Click “Confirm”> Check change log> Check audit log.</li>
+<li><span class="badge bg-only">仅最终版</span> 2. After step 4, The system does not call the third-party gateway, and the status is still</li>
+<li><span class="badge bg-only">仅最终版</span> “Completed”.</li>
+<li><span class="badge bg-only">仅最终版</span> 3. After step 5, The system does not call the third-party gateway, and the status is still</li>
+<li><span class="badge bg-only">仅最终版</span> “Completed”.</li>
+<li><span class="badge bg-only">仅最终版</span> 2.6. Verify The translation of change log (Accept/Reject/Cancel) for Awaiting</li>
+<li><span class="badge bg-only">仅最终版</span> Refund is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Accept</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.1. [EDIT] Deposit Status : Voided (Refunded), Payment Method : new payby,</li>
+<li><span class="badge bg-only">仅最终版</span> Amount : 40, Third Party Payment Action : Accept Refund Request, Third Party Payment</li>
+<li><span class="badge bg-only">仅最终版</span> Method : Prepaid, Refund Amount : 40</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.2. [編輯] 保證金狀態 : 作廢（退款）, 付款方法 : new payby, 金額 : 40, 第三方</li>
+<li><span class="badge bg-only">仅最终版</span> 支付行為 : 接受退款申請, 第三方支付方式 : Prepaid, 退款金額 : 40</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.3. [编辑] 保证金状态 : 作废（退款）, 付款方法 : new payby, 金额 : 40, 第三方</li>
+<li><span class="badge bg-only">仅最终版</span> 支付行为 : 接受退款申请, 第三方支付方式 : Prepaid, 退款金额 : 40</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.4. [編集] 証拠金の状態 : 無効(返金), 支払方法 : new payby, 金額 : 40, 第三者</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.5. [편집] 마진 상태입니다 : 무효 (환불), 결제 방법 : new payby, 금액 : 40, 제 3</li>
+<li><span class="badge bg-only">仅最终版</span> 자 결제 조치 : 환불 요청 승인, 제 3 자 결제 방법 : Prepaid, 환불 금액 : 40</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Reject</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.1. [EDIT] Deposit Status : Completed, Payment Method : new payby, Amount :</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.2. [編輯] 保證金狀態 : 完成, 付款方法 : new payby, 金額 : 30, 第三方支付行為 :</li>
+<li><span class="badge bg-only">仅最终版</span> 拒絕退款申請, 第三方支付方式 : Prepaid, 退款金額 : 30</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.3. [编辑] 保证金状态 : 完成, 付款方法 : new payby, 金额 : 30, 第三方支付行为 :</li>
+<li><span class="badge bg-only">仅最终版</span> 拒绝退款申请, 第三方支付方式 : Prepaid, 退款金额 : 30</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.4. [編集] 証拠金の状態 : 完了です, 支払方法 : new payby, 金額 : 30, 第三者支</li>
+<li><span class="badge bg-only">仅最终版</span> 払アクション : 返金リクエスト却下, サードパーティの支払い方法 : Prepaid, 返金額 : 30</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.5. [편집] 마진 상태입니다 : 완료, 결제 방법 : new payby, 금액 : 30, 제 3 자 결</li>
+<li><span class="badge bg-only">仅最终版</span> 제 조치 : 환불 요청 거절, 제 3 자 결제 방법 : Prepaid, 환불 금액 : 30</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Cancel</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.1. Completed, Payment Method : new payby, Amount : 30, Third Party</li>
+<li><span class="badge bg-only">仅最终版</span> Payment Action : Cancel Refund Request, Third Party Payment Method : Prepaid,</li>
+<li><span class="badge bg-only">仅最终版</span> Refund Amount : 30</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.2. [編輯] 保證金狀態 : 完成, 付款方法 : new payby, 金額 : 30, 第三方支付行為 :</li>
+<li><span class="badge bg-only">仅最终版</span> 取消退款申請, 第三方支付方式 : Prepaid, 退款金額 : 30</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.3. [编辑] 保证金状态 : 完成, 付款方法 : new payby, 金额 : 30, 第三方支付行为 :</li>
+<li><span class="badge bg-only">仅最终版</span> 取消退款申请, 第三方支付方式 : Prepaid, 退款金额 : 30</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.4. [編集] 証拠金の状態 : 完了です, 支払方法 : new payby, 金額 : 30, 第三者支</li>
+<li><span class="badge bg-only">仅最终版</span> 払アクション : 返金リクエスト取消, サードパーティの支払い方法 : Prepaid, 返金額 : 30</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.5. [편집] 마진 상태입니다 : 완료, 결제 방법 : new payby, 금액 : 30, 제 3 자 결</li>
+<li><span class="badge bg-only">仅最终版</span> 제 조치 : 환불 요청 취소, 제 3 자 결제 방법 : Prepaid, 환불 금액 : 30</li>
+<li><span class="badge bg-only">仅最终版</span> 2.7. Verify No Refund Workflow</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1. Verify Transfer Workflow with "Awaiting Transfer" Config Enabled (No</li>
+<li><span class="badge bg-only">仅最终版</span> Authority)</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.1. You do not have transfer authority. After confirmation, this payment will be</li>
+<li><span class="badge bg-only">仅最终版</span> changed to awaiting transfer and requires approval before the transfer can proceed.</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.2. 你沒有轉賬權限。確認後此付款會改為等候轉賬，須經批核才可轉賬。</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.3. 您没有转账权限。确认后此付款将改为等候转账，须经审批才可转账。</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.4. 振替権限がありません。確認後、この支払いは振替待ちとなり、承認後に</li>
+<li><span class="badge bg-only">仅最终版</span> 振替されます。</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1.5. 이체 권한이 없습니다. 확인 후 이 결제는 이체 대기로 변경되며, 승인 후에</li>
+<li><span class="badge bg-only">仅最终版</span> 이체가 진행됩니다..</li>
+<li><span class="badge bg-only">仅最终版</span> 3. After step 4, The payment status changes to "Awaiting Transfer".</li>
+<li><span class="badge bg-only">仅最终版</span> 4. After step 5/ 6, A reservation change log and HQ audit log are generated for the awaiting</li>
+<li><span class="badge bg-only">仅最终版</span> transfer request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. A reservation change log is generated for the awaiting transfer request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.1. [EDIT] Deposit Status : Completed, Payment Method : new payby,</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.2. [編輯] 保證金狀態 : 完成, 付款方法 : new payby, 金額 : 30, 第三方支</li>
+<li><span class="badge bg-only">仅最终版</span> 付行為 : 等候轉移, 確認編號 : 從 260910BL01R320 至 260910BL01R317</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.3. [编辑] 保证金状态 : 完成, 付款方法 : new payby, 金额 : 30, 第三方支</li>
+<li><span class="badge bg-only">仅最终版</span> 付行为 : 等候转移, 确认编号 : 从 260910BL01R320 至 260910BL01R317</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.4. [編集] 証拠金の状態 : 完了です, 支払方法 : new payby, 金額 : 30, 第</li>
+<li><span class="badge bg-only">仅最终版</span> 三者支払アクション : 振替待ち, 予約番号 : から 260910BL01R320 に</li>
+<li><span class="badge bg-only">仅最终版</span> 260910BL01R317</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.5. [편집] 마진 상태입니다 : 완료, 결제 방법 : new payby, 금액 : 30, 제</li>
+<li><span class="badge bg-only">仅最终版</span> 3 자 결제 조치 : 이체 대기, 확인 번호 : 보낸 사람 260910BL01R320 받는 사람</li>
+<li><span class="badge bg-only">仅最终版</span> 260910BL01R317</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. A reservation audit log is generated for the awaiting refund request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 3.2. Verify Transfer Workflow with "Awaiting Transfer " Config Disabled (No</li>
+<li><span class="badge bg-only">仅最终版</span> Authority)</li>
+<li><span class="badge bg-only">仅最终版</span> 3.3. Verify Transfer Workflow with "Ask Authority" Function Setup</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. A reservation change log is generated for the awaiting refund request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.1. [EDIT] Deposit Status : Completed, Payment Method : new payby,</li>
+<li><span class="badge bg-only">仅最终版</span> Amount : 30, Third Party Payment Action : Transfer, Confirmation No. : From</li>
+<li><span class="badge bg-only">仅最终版</span> 260910BL01R320 To 260910BL01R313</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.2. [編輯] 保證金狀態 : 完成, 付款方法 : new payby, 金額 : 30, 第三方支</li>
+<li><span class="badge bg-only">仅最终版</span> 付行為 : 轉移, 確認編號 : 從 260910BL01R320 至 260910BL01R313</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.3. [编辑] 保证金状态 : 完成, 付款方法 : new payby, 金额 : 30, 第三方支</li>
+<li><span class="badge bg-only">仅最终版</span> 付行为 : 转移, 确认编号 : 从 260910BL01R320 至 260910BL01R313</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.4. [編集] 証拠金の状態 : 完了です, 支払方法 : new payby, 金額 : 30, 第</li>
+<li><span class="badge bg-only">仅最终版</span> 三者支払アクション : 振替, 予約番号 : から 260910BL01R320 に</li>
+<li><span class="badge bg-only">仅最终版</span> 260910BL01R313</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1.5. [편집] 마진 상태입니다 : 완료, 결제 방법 : new payby, 금액 : 30, 제</li>
+<li><span class="badge bg-only">仅最终版</span> 3 자 결제 조치 : 이체, 확인 번호 : 보낸 사람 260910BL01R320 받는 사람</li>
+<li><span class="badge bg-only">仅最终版</span> 260910BL01R313</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. A reservation audit log is generated for the awaiting refund request.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. The translation is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 3.4. Verify Transfer Workflow with "Ask Password/ Approval" Function Setup</li>
+<li><span class="badge bg-only">仅最终版</span> 3.5. Verify Approver Actions (Accept/Reject/Cancel) for Awaiting Transfer</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Repeat the process for another awaiting refund payment, but click "Reject" button> Click</li>
+<li><span class="badge bg-only">仅最终版</span> “Confirm”> Check change log> Check audit log.</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Click "Cancel Request"> Click “Confirm”> Check change log> Check audit log.</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. The transfer reservation will not show in Third Party Payment List page: "Awaiting</li>
+<li><span class="badge bg-only">仅最终版</span> Transfer" status .</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. The status of the reservation B is completed.</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. The change log and audit log are correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 2. After step 4, The system does not call the third-party gateway, and the status is still</li>
+<li><span class="badge bg-only">仅最终版</span> “Completed”.</li>
+<li><span class="badge bg-only">仅最终版</span> 3. After step 5, The system does not call the third-party gateway, and the status is still</li>
+<li><span class="badge bg-only">仅最终版</span> “Completed”.</li>
+<li><span class="badge bg-only">仅最终版</span> 3.6. Verify The translation of change log (Accept/Reject/Cancel) for Awaiting</li>
+<li><span class="badge bg-only">仅最终版</span> Refund is correct.</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1. Accept</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.1. [EDIT] Deposit Status : Completed, Payment Method : new payby 2,</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.2. [編輯] 保證金狀態 : 完成, 付款方法 : new payby 2, 金額 : 55, 第三方支付行</li>
+<li><span class="badge bg-only">仅最终版</span> 為 : 接受轉移申請, 確認編號 : 從 260911BL01R315 至 260911BF01R313</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.3. [编辑] 保证金状态 : 完成, 付款方法 : new payby 2, 金额 : 55, 第三方支付行</li>
+<li><span class="badge bg-only">仅最终版</span> 为 : 接受转移申请, 确认编号 : 从 260911BL01R315 至 260911BF01R313</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.4. [編集] 証拠金の状態 : 完了です, 支払方法 : new payby 2, 金額 : 55, 第三者</li>
+<li><span class="badge bg-only">仅最终版</span> 支払アクション : 振替リクエスト承認, 予約番号 : から 260911BL01R315 に</li>
+<li><span class="badge bg-only">仅最终版</span> 260911BF01R313</li>
+<li><span class="badge bg-only">仅最终版</span> 1.1.5. [편집] 마진 상태입니다 : 완료, 결제 방법 : new payby 2, 금액 : 55, 제 3 자</li>
+<li><span class="badge bg-only">仅最终版</span> 결제 조치 : 이체 요청 승인, 확인 번호 : 보낸 사람 260911BL01R315 받는 사람</li>
+<li><span class="badge bg-only">仅最终版</span> 260911BF01R313</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2. Reject</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.1. [EDIT] Deposit Status : Completed, Payment Method : new payby 2,</li>
+<li><span class="badge bg-only">仅最终版</span> Amount : 30, Third Party Payment Action : Reject Transfer Request, Third Party Payment</li>
+<li><span class="badge bg-only">仅最终版</span> Method : Prepaid, Confirmation No. : From 260911BF01R314 To 260911BL01R312</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.2. [編輯] 保證金狀態 : 完成, 付款方法 : new payby 2, 金額 : 30, 第三方支付行</li>
+<li><span class="badge bg-only">仅最终版</span> 為 : 拒絕轉移申請, 第三方支付方式 : Prepaid, 確認編號 : 從 260911BF01R314 至</li>
+<li><span class="badge bg-only">仅最终版</span> 260911BL01R312</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.3. [编辑] 保证金状态 : 完成, 付款方法 : new payby 2, 金额 : 30, 第三方支付行</li>
+<li><span class="badge bg-only">仅最终版</span> 为 : 拒绝转移申请, 第三方支付方式 : Prepaid, 确认编号 : 从 260911BF01R314 至</li>
+<li><span class="badge bg-only">仅最终版</span> 260911BL01R312</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.4. [編集] 証拠金の状態 : 完了です, 支払方法 : new payby 2, 金額 : 30, 第三者</li>
+<li><span class="badge bg-only">仅最终版</span> 1.2.5. [편집] 마진 상태입니다 : 완료, 결제 방법 : new payby 2, 금액 : 30, 제 3 자</li>
+<li><span class="badge bg-only">仅最终版</span> 결제 조치 : 이체 요청 거절, 제 3 자 결제 방법 : Prepaid, 확인 번호 : 보낸 사람</li>
+<li><span class="badge bg-only">仅最终版</span> 260911BF01R314 받는 사람 260911BL01R312</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3. Cancel</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.1. [EDIT] Deposit Status : Completed, Payment Method : new payby 2,</li>
+<li><span class="badge bg-only">仅最终版</span> Amount : 30, Third Party Payment Action : Cancel Transfer Request, Third Party</li>
+<li><span class="badge bg-only">仅最终版</span> Payment Method : Prepaid, Confirmation No. : From 260911BF01R314 To</li>
+<li><span class="badge bg-only">仅最终版</span> 260911BL01R312</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.2. [編輯] 保證金狀態 : 完成, 付款方法 : new payby 2, 金額 : 30, 第三方支付行</li>
+<li><span class="badge bg-only">仅最终版</span> 為 : 取消轉移申請, 第三方支付方式 : Prepaid, 確認編號 : 從 260911BF01R314 至</li>
+<li><span class="badge bg-only">仅最终版</span> 260911BL01R312</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.3. [编辑] 保证金状态 : 完成, 付款方法 : new payby 2, 金额 : 30, 第三方支付行</li>
+<li><span class="badge bg-only">仅最终版</span> 为 : 取消转移申请, 第三方支付方式 : Prepaid, 确认编号 : 从 260911BF01R314 至</li>
+<li><span class="badge bg-only">仅最终版</span> 260911BL01R312</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.4. [編集] 証拠金の状態 : 完了です, 支払方法 : new payby 2, 金額 : 30, 第三者</li>
+<li><span class="badge bg-only">仅最终版</span> 1.3.5. [편집] 마진 상태입니다 : 완료, 결제 방법 : new payby 2, 금액 : 30, 제 3 자</li>
+<li><span class="badge bg-only">仅最终版</span> 결제 조치 : 이체 요청 취소, 제 3 자 결제 방법 : Prepaid, 확인 번호 : 보낸 사람</li>
+<li><span class="badge bg-only">仅最终版</span> 260911BF01R314 받는 사람 260911BL01R312</li>
+<li><span class="badge bg-only">仅最终版</span> 3.7. Verify Transfer Target Reservation Selection and Payment Transfer Reason</li>
+<li><span class="badge bg-only">仅最终版</span> 2.1. Reservation A> Confirmation No.: 260911BF01R312, date: 2026-09-11, last name:</li>
+<li><span class="badge bg-only">仅最终版</span> Lin, and first name: Jeff.</li>
+<li><span class="badge bg-only">仅最终版</span> 2.2. Reservation B> Confirmation No.: 260911BL01R312, date: 2026-09-11, last name:</li>
+<li><span class="badge bg-only">仅最终版</span> zhang, and first name: jeryy.</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Admin Page -> Table Management System (TMS) -> Payment Setup -> Payment Transfer</li>
+<li><span class="badge bg-only">仅最终版</span> Reasons> Create 2 new Payment Transfer Reason> Reason 1: Force to Enter Remark: Yes/</li>
+<li><span class="badge bg-only">仅最终版</span> Reason 2: Force to Enter Remark: No</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. Confirmation No.: 2609, date range: 2026-09-11 02:00~ 2026-09-12 21:59, last name:</li>
+<li><span class="badge bg-only">仅最终版</span> n, and first name: je.</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Select the target booking.</li>
+<li><span class="badge bg-only">仅最终版</span> 3.1. Time-picker can select date and time</li>
+<li><span class="badge bg-only">仅最终版</span> 3.2. Confirmation No., last name, and first name. support for partial search.</li>
+<li><span class="badge bg-only">仅最终版</span> 3.3. The Awaiting Transfer button is dimmed.</li>
+<li><span class="badge bg-only">仅最终版</span> 4. The Awaiting Transfer button can be clicked.</li>
+<li><span class="badge bg-only">仅最终版</span> 4. TMS Payment List and Details</li>
+<li><span class="badge bg-only">仅最终版</span> 4.1. Verify Payment List Independent Page and Filters</li>
+<li><span class="badge bg-only">仅最终版</span> 8. After step 8/9, the date can be selected successfully.</li>
+<li><span class="badge bg-only">仅最终版</span> 9. After step 10, all fields will be reset.</li>
+<li><span class="badge bg-only">仅最终版</span> 4.2. Verify Payment List Columns and Amount Calculations</li>
+<li><span class="badge bg-only">仅最终版</span> 4.3. Verify sort of Payment List Columns</li>
+<li><span class="badge bg-only">仅最终版</span> 4.4. Verify Payment Details Side Panel and Auto-Refresh via Webhook</li>
+<li><span class="badge bg-only">仅最终版</span> 4.5. Verify Payment List View authority</li>
+<li><span class="badge bg-only">仅最终版</span> 4.6. Verify The translation of Payment List View</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Deposit Refund Workflow for offline payment</li>
+<li><span class="badge bg-only">仅最终版</span> 5.1. Verify Refund Workflow with "Awaiting Refund" Config Enabled (No Authority)</li>
+<li><span class="badge bg-only">仅最终版</span> 3. After step 4, The payment status changes to "Void(No Refund)".</li>
+<li><span class="badge bg-only">仅最终版</span> 4. After step 7, The payment status changes to "Void(Refund)".</li>
+<li><span class="badge bg-only">仅最终版</span> 5. After step 8, Save reservation successfully.</li>
+<li><span class="badge bg-only">仅最终版</span> 6. POS Payment API Integration</li>
+<li><span class="badge bg-only">仅最终版</span> 6.1. Verify POS API `DepositsByReservationId` for Consumption and Refund</li>
+<li><span class="badge bg-only">仅最终版</span> 6.2. Verify POS API Error Handling for Missing, Not Found, and Invalid Parameters</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+1. Browser Compatibility
+1.1. Verify TMS Payment List and Workflows in Chrome
+1. Functional tests are tested in Chrome Browser
+1.2. Verify TMS Payment List and Workflows in Firefox
+Prerequisite(s):
+1. Mozilla Firefox browser is installed and updated to the latest version.
+Step(s):
+1. Log in to TMS Operation and HQ using Firefox.
+2. Navigate to the Payment List, apply filters, and open the side panel.
+3. Execute Refund and Transfer workflows with SoD configurations.
+Test Result(s):
+1. The Payment List UI renders correctly and matches Chrome behavior.
+2. All interactive elements, including date pickers and authority popups, work as expected.
+
+1.3. Verify TMS Payment List and Workflows in Edge
+Prerequisite(s):
+1. Microsoft Edge browser is installed and updated to the latest version.
+Step(s):
+1. Log in to TMS Operation and HQ using Edge.
+2. Navigate to the Payment List, apply filters, and open the side panel.
+3. Execute Refund and Transfer workflows with SoD configurations.
+Test Result(s):
+1. The UI is fully responsive and correctly aligned.
+2. All workflow actions, API callbacks, and auto-refresh features operate without errors.
+
+Test Environment
+ Browser: Chrome, Firefox, Edge
+ Environment: hqqccn1/2/3</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:22　·　Sprint: 75474</p>
+</body></html>

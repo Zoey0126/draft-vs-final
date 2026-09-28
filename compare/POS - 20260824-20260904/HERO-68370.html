@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-68370 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-68370 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-68370_20260914_092415.docx　<strong>最终版</strong>：HERO-68370 Test Report(Final).pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 9 用例 / 最终版 148 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> Issues of POS WSPS feature Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Functional Testing</li>
+<li><span class="badge bg-only">仅草稿</span> 1. WSPS Role Start on Selected Online Device</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Start WSPS on the Selected Online Device</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Start WSPS on a Station with Embed Printing Service Disabled</li>
+<li><span class="badge bg-only">仅草稿</span> 1.3. Pause and Restore Act Only on the Current Workstation</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Starting Status Is Shown After Role Assignment Before Printing Starts</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Status Automatically Changes to Standby After About 90 Seconds of No Contact</li>
+<li><span class="badge bg-only">仅草稿</span> 2.3. No False Standby After Start and Status Refreshes While Panel Is Open</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> — 1 —</li>
+<li><span class="badge bg-only">仅最终版</span> HERO-68370 Test Report</li>
+<li><span class="badge bg-only">仅最终版</span> Tester: Jacqueline. Wei</li>
+<li><span class="badge bg-only">仅最终版</span> Update Time: 2026-09-22</li>
+<li><span class="badge bg-only">仅最终版</span> Panel UX ..................................................................................................................................................................................... 1</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Support force target station become WSPS for station which is not WSPS: Passed .................... 1</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Support temporary disable the station which is not WSPS: Passed ................................ .............2</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Support restore liable to become WSPS for station which is temporary stopped: Passed ............3</li>
+<li><span class="badge bg-only">仅最终版</span> F1.4. Support temporary stop and disable WSPS for station which is WSPS: Passed .......................... 4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.5. Abort operations if click Cancel button: Passed ................................ ................................ ...........5</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6. Abort operations if click No button: Passed ................................ ................................ .................6</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6.1. Temporary stop and disable WSPS window ................................ ................................ ......6</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6.2. Force become WSPS window ................................ ................................ ........................... 6</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6.3. Temporary disable WSPS window ................................ ................................ ..................... 6</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6.3. Restore liable to become WSPS window ................................ ................................ ...........6</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. WSPS status = Running when WSPS traffic is active: Passed ................................ .................... 7</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1.1. Support force target station become WSPS by manual ................................ ..................... 7</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1.2. Support auto assign eligible station as Running WSPS in 60s if Role Open ...................... 7</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1.3. Support auto assign eligible station as Running WSPS in 60s if Standby .......................... 8</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. WSPS status = Role Open when have no eligible Windows stations to become WSPS: Passed .8</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2.1. When empty Online Devices ................................ ................................ ............................. 8</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2.2. When temporary disable all eligible stations ................................ ................................ ......8</li>
+<li><span class="badge bg-only">仅最终版</span> F2.3. WSPS status = Standby when current WSPS no contact for approximately 90s: Passed ............8</li>
+<li><span class="badge bg-only">仅最终版</span> F2.4. WSPS Status = ‘Not Configured’ if wsps_port not set on launcher: Passed ................................ .9</li>
+<li><span class="badge bg-only">仅最终版</span> F2.5. WSPS Status = ‘Setup Pending’ if print service address does not match shop code: Passed ......9</li>
+<li><span class="badge bg-only">仅最终版</span> F2.6. Running WSPS can provide printing core service for all stations of the same shop: Passed........9</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7. Translations in English, Traditional Chinese, Simplified Chinese of the new window: Passed ....10</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.1. Temporary stop and disable WSPS window ................................ ................................ ....10</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.2. Force become WSPS window ................................ ................................ ......................... 10</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.3. Temporary disable WSPS window ................................ ................................ ................... 10</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.4. Restore liable to become WSPS window ................................ ................................ .........10</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.5. Please select window ................................ ................................ ................................ ......10</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.6. Print Service Information window ................................ ................................ .................... 10</li>
+<li><span class="badge bg-only">仅最终版</span> F3.1. Only Windows stations can use function ‘Retrieve Print Service Information’: Passed ............... 11</li>
+<li><span class="badge bg-only">仅最终版</span> F3.2. Only Windows station can display as Online Devices for WSPS after login when Enable</li>
+<li><span class="badge bg-only">仅最终版</span> F3.3. Station disappear from the Online Devices list if logout / Reset app and server: Passed ...........12</li>
+<li><span class="badge bg-only">仅最终版</span> F4.1. Generate log file hero_wsps.txt with WSPS info when set `temp_debug_wsps=1`: Passed.......13</li>
+<li><span class="badge bg-only">仅最终版</span> F4.2. Avoid generating unnecessary WSPS INFO during normal operation when set</li>
+<li><span class="badge bg-only">仅最终版</span> F4.3. Generate log file hero_wsps_err.txt with errors and security denies information: Passed ...........14</li>
+<li><span class="badge bg-only">仅最终版</span> F5.1. Classic printing core service works normally when Disable embedded Printing Core Service:</li>
+<li><span class="badge bg-only">仅最终版</span> (untitled)</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Support force target station become WSPS for station which is not WSPS: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Click station B and click ‘Force become WSPS’</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click Yes button</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Click Refresh button</li>
+<li><span class="badge bg-only">仅最终版</span> Basic Information: WSPS Status = Running</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Click station A and click ‘Force become WSPS’</li>
+<li><span class="badge bg-only">仅最终版</span> 6. Click Yes button</li>
+<li><span class="badge bg-only">仅最终版</span> 7. Click Refresh button</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Support temporary disable the station which is not WSPS: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Click station B, click ’Temporary disable WSPS’</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click Yes button</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Click station C, click ’Temporary disable WSPS’</li>
+<li><span class="badge bg-only">仅最终版</span> — 4 —</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Click Yes button</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Support restore liable to become WSPS for station which is temporary stopped: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Click station B, click ‘Restore liable to become WSPS’</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click Yes button</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Click station A, click ‘Restore liable to become WSPS’</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Click Yes button</li>
+<li><span class="badge bg-only">仅最终版</span> F1.4. Support temporary stop and disable WSPS for station which is WSPS: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Click station A, click ‘Temporary stop and disable WSPS’</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click Yes button</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Click station B, click ‘Force become WSPS’</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Click station B, click ‘Temporary stop and disable WSPS’</li>
+<li><span class="badge bg-only">仅最终版</span> 6. Click Yes button</li>
+<li><span class="badge bg-only">仅最终版</span> F1.5. Abort operations if click Cancel button: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click Cancel button</li>
+<li><span class="badge bg-only">仅最终版</span> System abort operation and back to ‘Print Service Information’ window</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Click station B</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Click Cancel button</li>
+<li><span class="badge bg-only">仅最终版</span> 6. Click station C</li>
+<li><span class="badge bg-only">仅最终版</span> — 7 —</li>
+<li><span class="badge bg-only">仅最终版</span> 7. Click Cancel button</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6. Abort operations if click No button: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6.1. Temporary stop and disable WSPS window</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click No button</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6.2. Force become WSPS window</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click No button</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6.3. Temporary disable WSPS window</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click No button</li>
+<li><span class="badge bg-only">仅最终版</span> F1.6.3. Restore liable to become WSPS window</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click No button</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. WSPS status = Running when WSPS traffic is active: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1.1. Support force target station become WSPS by manual</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1.2. Support auto assign eligible station as Running WSPS in 60s if Role Open</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Click Refresh icon</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Click Refresh icon again</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1.3. Support auto assign eligible station as Running WSPS in 60s if Standby</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. WSPS status = Role Open when have no eligible Windows stations to become WSPS: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2.1. When empty Online Devices</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2.2. When temporary disable all eligible stations</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Perform ‘Temporary disable’ to all online stations</li>
+<li><span class="badge bg-only">仅最终版</span> F2.3. WSPS status = Standby when current WSPS no contact for approximately 90s: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2. Close the station B’s POS Client app window</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Waits and click Refresh button repeatedly</li>
+<li><span class="badge bg-only">仅最终版</span> F2.4. WSPS Status = ‘Not Configured’ if wsps_port not set on launcher: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> — 10</li>
+<li><span class="badge bg-only">仅最终版</span> —</li>
+<li><span class="badge bg-only">仅最终版</span> 1. The setting ‘wsps_port’ is Omit / blank / 0 in target configuration files</li>
+<li><span class="badge bg-only">仅最终版</span> [server install path]\infrasys\www\hero_pos\cfg\config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> [server install path]\infrasys\local\hero_pos\cfg\config.ini</li>
+<li><span class="badge bg-only">仅最终版</span> F2.5. WSPS Status = ‘Setup Pending’ if print service address does not match shop code: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.6. Running WSPS can provide printing core service for all stations of the same shop: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7. Translations in English, Traditional Chinese, Simplified Chinese of the new window: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.1. Temporary stop and disable WSPS window</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.2. Force become WSPS window</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.3. Temporary disable WSPS window</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.4. Restore liable to become WSPS window</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.5. Please select window</li>
+<li><span class="badge bg-only">仅最终版</span> F2.7.6. Print Service Information window</li>
+<li><span class="badge bg-only">仅最终版</span> — 12</li>
+<li><span class="badge bg-only">仅最终版</span> —</li>
+<li><span class="badge bg-only">仅最终版</span> Limitations</li>
+<li><span class="badge bg-only">仅最终版</span> F3.1. Only Windows stations can use function ‘Retrieve Print Service Information’: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Login Android client B and iOS client C</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Click “Retrieve Print Service Information” function on floor panel / Ordering panel</li>
+<li><span class="badge bg-only">仅最终版</span> F3.2. Only Windows station can display as Online Devices for WSPS after login when Enable embedded</li>
+<li><span class="badge bg-only">仅最终版</span> Printing Core Service = Enable: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 2. [Windows client A, B client] Settings -> Debug</li>
+<li><span class="badge bg-only">仅最终版</span> Enable embedded Printing Core Service = Enable</li>
+<li><span class="badge bg-only">仅最终版</span> 3. [Windows client C client] Settings -> Debug</li>
+<li><span class="badge bg-only">仅最终版</span> Enable embedded Printing Core Service = Disable / Please Select(default)</li>
+<li><span class="badge bg-only">仅最终版</span> — 13</li>
+<li><span class="badge bg-only">仅最终版</span> —</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Windows client A login and click function “Retrieve Print Service Information”</li>
+<li><span class="badge bg-only">仅最终版</span> Online Devices: only display station A’s code</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Windows client B login and click function “Retrieve Print Service Information”</li>
+<li><span class="badge bg-only">仅最终版</span> Online Devices: display station A and B’s code</li>
+<li><span class="badge bg-only">仅最终版</span> 6. Station A side the click Refresh button</li>
+<li><span class="badge bg-only">仅最终版</span> Online Devices: display station A and B’s code</li>
+<li><span class="badge bg-only">仅最终版</span> 7. Windows client C login and click function “Retrieve Print Service Information”</li>
+<li><span class="badge bg-only">仅最终版</span> F3.3. Station disappear from the Online Devices list if logout / Reset app and server: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> 3. Station B click Exit button twice to logout</li>
+<li><span class="badge bg-only">仅最终版</span> 4. Station C click Refresh button</li>
+<li><span class="badge bg-only">仅最终版</span> Online Devices: only display station A’ s code, not including stations B and C</li>
+<li><span class="badge bg-only">仅最终版</span> — 14</li>
+<li><span class="badge bg-only">仅最终版</span> —</li>
+<li><span class="badge bg-only">仅最终版</span> 5. Station A close the POS client window</li>
+<li><span class="badge bg-only">仅最终版</span> 6. Station C click Refresh button</li>
+<li><span class="badge bg-only">仅最终版</span> Online Devices: still display station A’ s code</li>
+<li><span class="badge bg-only">仅最终版</span> 7. Open POS client A, press keyboard ‘Esc’ and click “Reset app and server”</li>
+<li><span class="badge bg-only">仅最终版</span> 8. Station C click Refresh button</li>
+<li><span class="badge bg-only">仅最终版</span> F4.1. Generate log file hero_wsps.txt with WSPS info when set `temp_debug_wsps=1`: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F4.2. Avoid generating unnecessary WSPS INFO during normal operation when set `temp_debug_wsps=0`:</li>
+<li><span class="badge bg-only">仅最终版</span> Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F4.3. Generate log file hero_wsps_err.txt with errors and security denies information: Passed</li>
+<li><span class="badge bg-only">仅最终版</span> F5.1. Classic printing core service works normally when Disable embedded Printing Core Service: Passed</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>最终版环境</strong><pre>Compatibility Testing
+• Shiji Workstation
+o Device Model: HK5610
+o Device OS: Windows 11 IoT Enterprise LTSC
+o POS Client Version: 1.114.0
+• iOS Mobile Device
+
+o Device Model: iPad Air 4/iPhone15
+
+o iPhone OS Version: 26.0
+
+• Android Mobile Device
+
+o Device Model: HiStone(Hi20)
+
+o Android OS version: 13
+
+Test Environment
+QC Office Server trunk version & Branch version</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:01　·　Sprint: 65586</p>
+</body></html>

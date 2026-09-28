@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<title>HERO-67950 测试报告对比</title>
+<style>
+body{font-family:'Microsoft YaHei',Arial,sans-serif;color:#222;max-width:1000px;margin:0 auto;padding:16px;line-height:1.6}
+h2{color:#1a4d8f;border-bottom:2px solid #1a4d8f;padding-bottom:6px}
+.ratio{text-align:center;padding:16px 0}
+.ratio .big{font-size:36px;font-weight:bold}
+.ratio .label{font-size:13px;color:#888}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:16px}
+th{background:#34495e;color:#fff;padding:6px 8px;text-align:left}
+td{padding:6px 8px;border-bottom:1px solid #ddd}
+.match{color:#27ae60}.mismatch{color:#c0392b}
+.badge{padding:2px 8px;border-radius:3px;font-size:11px;color:#fff}
+.bg-match{background:#27ae60}.bg-mismatch{background:#c0392b}.bg-only{background:#95a5a6}
+.case{margin-bottom:12px;border:1px solid #ddd;border-radius:4px;padding:8px 12px}
+.case h4{margin:0 0 4px 0;color:#1a4d8f}
+.field{margin:4px 0;padding:4px 6px;border-left:3px solid #ccc}
+.field.match{border-color:#27ae60}.field.mismatch{border-color:#c0392b}
+pre{white-space:pre-wrap;font-size:12px;font-family:'Courier New',monospace}
+</style></head><body>
+<h2>HERO-67950 测试报告对比（草稿 vs 最终版本）</h2>
+<p><strong>草稿</strong>：HERO-67950_20260914_092415.docx　<strong>最终版</strong>：HERO-67950_final.pdf</p>
+<div class="ratio"><div class="big" style="color:#c0392b;">0.0%</div><div class="label">整体匹配率（草稿 10 用例 / 最终版 14 用例）</div></div>
+<h3 style="color:#e67e22;">仅在草稿中</h3><ul>
+<li><span class="badge bg-only">仅草稿</span> TMS 2.0 - Fixing undefined array key issues on PHP 8 (Owner Box Waitlist user + period oper_id) Test Report</li>
+<li><span class="badge bg-only">仅草稿</span> Functional Testing</li>
+<li><span class="badge bg-only">仅草稿</span> 1. Owner Box Waitlist Modifier User Handling</li>
+<li><span class="badge bg-only">仅草稿</span> 1.1. Waitlist with missing modifier user</li>
+<li><span class="badge bg-only">仅草稿</span> 1.2. Owner Box Waitlist opened without date parameter</li>
+<li><span class="badge bg-only">仅草稿</span> 1.3. Race date with schedule but no waitlist reservations</li>
+<li><span class="badge bg-only">仅草稿</span> 2.1. Period options on non-operating day with period set deployment</li>
+<li><span class="badge bg-only">仅草稿</span> 2.2. Period options on operating day with period set deployment (baseline)</li>
+<li><span class="badge bg-only">仅草稿</span> 2.3. Period change re-triggers table statistics</li>
+<li><span class="badge bg-only">仅草稿</span> 3.1. No undefined array key warnings after all scenarios</li>
+</ul>
+<h3 style="color:#27ae60;">仅在最终版中</h3><ul>
+<li><span class="badge bg-only">仅最终版</span> —1—</li>
+<li><span class="badge bg-only">仅最终版</span> HERO-67950 - Fixing undefined array key issues on PHP 8 (Owner Box</li>
+<li><span class="badge bg-only">仅最终版</span> Waitlist user + period oper_id)</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Empty WaitlistRows forRaceDate........................................................................................................1</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Missing Date Parameterin Waitlist.........................................................................................................1</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Missing ModifierUserinWaitlist..............................................................................................................1</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. Non-Operating Day with PeriodDeployment..........................................................................................2</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. OperatingDay with PeriodDeployment..................................................................................................4</li>
+<li><span class="badge bg-only">仅最终版</span> F1.1. Empty Waitlist Rows for Race Date</li>
+<li><span class="badge bg-only">仅最终版</span> F1.2. Missing Date Parameter in Waitlist</li>
+<li><span class="badge bg-only">仅最终版</span> F1.3. Missing Modifier User in Waitlist</li>
+<li><span class="badge bg-only">仅最终版</span> —2—</li>
+<li><span class="badge bg-only">仅最终版</span> F2.1. Non-Operating Day with Period Deployment</li>
+<li><span class="badge bg-only">仅最终版</span> F2.2. Operating Day with Period Deployment</li>
+</ul>
+<h3>执行环境对比</h3>
+<div class="field"><strong>最终版环境</strong><pre>Test Environment
+BUGRepeated byQCTestEnvironment:v1.2.114.0
+BUGFixedTestingQCTestEnvironment:v1.2.115.0(hqentms)</pre></div>
+<p style="color:#888;font-size:12px;">生成时间：2026-09-28 18:22　·　Sprint: 75474</p>
+</body></html>
