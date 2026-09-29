@@ -4,82 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>测试报告对比 · 草稿 vs 最终版本</title>
-<style>
-  * { box-sizing: border-box; }
-  body { font-family:'Microsoft YaHei','PingFang SC',Arial,sans-serif; color:#222;
-         max-width:1100px; margin:0 auto; padding:24px 16px 48px; line-height:1.6;
-         background:#f5f7fa; }
-  header { border-bottom:3px solid #1a4d8f; padding-bottom:14px; margin-bottom:20px; }
-  h1 { color:#1a4d8f; margin:0 0 6px; font-size:24px; }
-  .meta { color:#888; font-size:13px; }
-  .summary { display:flex; gap:16px; margin-bottom:24px; flex-wrap:wrap; }
-  .card { background:#fff; border-radius:8px; padding:16px 24px; box-shadow:0 1px 4px rgba(0,0,0,.08); flex:1; min-width:160px; }
-  .card .num { font-size:28px; font-weight:bold; color:#1a4d8f; }
-  .card .label { font-size:12px; color:#888; }
-  section.sprint { background:#fff; border-radius:8px; padding:18px 22px; margin-bottom:22px;
-                    box-shadow:0 1px 4px rgba(0,0,0,.08); }
-  h2 { color:#1a4d8f; margin:0 0 4px; font-size:18px; }
-  .sprint-meta { font-size:13px; color:#666; margin-bottom:12px; }
-  table { border-collapse:collapse; width:100%; font-size:13px; }
-  th { background:#34495e; color:#fff; padding:8px 10px; text-align:left; }
-  td { padding:7px 10px; border-bottom:1px solid #eee; }
-  tbody tr:hover { background:#f0f5fa; }
-  a { color:#1a4d8f; text-decoration:none; }
-  a:hover { text-decoration:underline; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>测试报告对比 · 草稿 vs 最终版本</h1>
-  <div class="meta">生成时间：2026-09-28 18:36</div>
-</header>
-<div class="summary">
-  <div class="card"><div class="num">3</div><div class="label">Sprint 数</div></div>
-  <div class="card"><div class="num">30</div><div class="label">已对比 Issue</div></div>
-  <div class="card"><div class="num" style="color:#c0392b">0.8%</div><div class="label">整体平均匹配率</div></div>
-</div>
 
-<section class="sprint">
-  <h2>POS - 20260824-20260904</h2>
-  <div class="sprint-meta">8 个 Issue &middot; 平均匹配率
-    <span style="color:#c0392b;font-weight:bold">0.4%</span>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">⇄</span>
+    <div>
+      <h1>测试报告对比</h1>
+      <div class="subtitle">Draft vs. Final</div>
+    </div>
   </div>
-  <table>
-    <thead><tr>
-      <th>Issue Key</th><th>草稿用例数</th><th>最终版用例数</th><th>匹配率</th>
-    </tr></thead>
-    <tbody>
-      <tr><td><a href="compare/POS - 20260824-20260904/HERO-55900.html">HERO-55900</a></td><td style="text-align:center">10</td><td style="text-align:center">28</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/POS - 20260824-20260904/HERO-62908.html">HERO-62908</a></td><td style="text-align:center">12</td><td style="text-align:center">471</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/POS - 20260824-20260904/HERO-67538.html">HERO-67538</a></td><td style="text-align:center">7</td><td style="text-align:center">11</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/POS - 20260824-20260904/HERO-67875.html">HERO-67875</a></td><td style="text-align:center">8</td><td style="text-align:center">21</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/POS - 20260824-20260904/HERO-68236.html">HERO-68236</a></td><td style="text-align:center">6</td><td style="text-align:center">5</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/POS - 20260824-20260904/HERO-68252.html">HERO-68252</a></td><td style="text-align:center">8</td><td style="text-align:center">79</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/POS - 20260824-20260904/HERO-68370.html">HERO-68370</a></td><td style="text-align:center">9</td><td style="text-align:center">148</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/POS - 20260824-20260904/HERO-62878.html">HERO-62878</a></td><td style="text-align:center">12</td><td style="text-align:center">30</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">3.3%</span></td></tr>
-    </tbody>
-  </table>
-</section>
-<section class="sprint">
-  <h2>Report - 20260824-20260904</h2>
-  <div class="sprint-meta">12 个 Issue &middot; 平均匹配率
-    <span style="color:#c0392b;font-weight:bold">0.3%</span>
+  <div class="navbar">
+    <label>Sprint
+      <select id="sprintSelect"><option value="">— 选择 Sprint —</option></select>
+    </label>
+    <label>Issue Key
+      <select id="issueSelect" disabled><option value="">— 先选择 Sprint —</option></select>
+    </label>
+    <button id="confirmBtn">确认</button>
+    <span id="modeTag" class="mode-tag"></span>
   </div>
-  <table>
-    <thead><tr>
-      <th>Issue Key</th><th>草稿用例数</th><th>最终版用例数</th><th>匹配率</th>
-    </tr></thead>
-    <tbody>
-      <tr><td><a href="compare/Report - 20260824-20260904/HERO-59786.html">HERO-59786</a></td><td style="text-align:center">39</td><td style="text-align:center">100</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-60071.html">HERO-60071</a></td><td style="text-align:center">17</td><td style="text-align:center">122</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-64286.html">HERO-64286</a></td><td style="text-align:center">9</td><td style="text-align:center">38</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-64461.html">HERO-64461</a></td><td style="text-align:center">10</td><td style="text-align:center">15</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-67731.html">HERO-67731</a></td><td style="text-align:center">12</td><td style="text-align:center">39</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-67789.html">HERO-67789</a></td><td style="text-align:center">13</td><td style="text-align:center">3</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-67800.html">HERO-67800</a></td><td style="text-align:center">10</td><td style="text-align:center">15</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-67812.html">HERO-67812</a></td><td style="text-align:center">12</td><td style="text-align:center">75</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-68133.html">HERO-68133</a></td><td style="text-align:center">16</td><td style="text-align:center">3</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-68275.html">HERO-68275</a></td><td style="text-align:center">24</td><td style="text-align:center">34</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-63574.html">HERO-63574</a></td><td style="text-align:center">11</td><td style="text-align:center">82</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">1.2%</span></td></tr><tr><td><a href="compare/Report - 20260824-20260904/HERO-62973.html">HERO-62973</a></td><td style="text-align:center">14</td><td style="text-align:center">53</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">1.9%</span></td></tr>
-    </tbody>
-  </table>
-</section>
-<section class="sprint">
-  <h2>TMS - 20260824-20260904</h2>
-  <div class="sprint-meta">10 个 Issue &middot; 平均匹配率
-    <span style="color:#c0392b;font-weight:bold">1.8%</span>
+</header>
+
+<section class="regions">
+  <div class="region region-draft">
+    <div class="region-head">
+      <h2>区域 1 · 初稿内容</h2>
+      <span class="region-sub">Draft (.docx)</span>
+    </div>
+    <div class="region-body" id="regionDraft"></div>
   </div>
-  <table>
-    <thead><tr>
-      <th>Issue Key</th><th>草稿用例数</th><th>最终版用例数</th><th>匹配率</th>
-    </tr></thead>
-    <tbody>
-      <tr><td><a href="compare/TMS - 20260824-20260904/HERO-57546.html">HERO-57546</a></td><td style="text-align:center">12</td><td style="text-align:center">59</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/TMS - 20260824-20260904/HERO-67950.html">HERO-67950</a></td><td style="text-align:center">10</td><td style="text-align:center">14</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/TMS - 20260824-20260904/HERO-68002.html">HERO-68002</a></td><td style="text-align:center">12</td><td style="text-align:center">23</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/TMS - 20260824-20260904/HERO-68158.html">HERO-68158</a></td><td style="text-align:center">16</td><td style="text-align:center">284</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/TMS - 20260824-20260904/HERO-68171.html">HERO-68171</a></td><td style="text-align:center">8</td><td style="text-align:center">11</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/TMS - 20260824-20260904/HERO-68315.html">HERO-68315</a></td><td style="text-align:center">6</td><td style="text-align:center">15</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">0.0%</span></td></tr><tr><td><a href="compare/TMS - 20260824-20260904/HERO-68311.html">HERO-68311</a></td><td style="text-align:center">9</td><td style="text-align:center">37</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">2.7%</span></td></tr><tr><td><a href="compare/TMS - 20260824-20260904/HERO-67026.html">HERO-67026</a></td><td style="text-align:center">10</td><td style="text-align:center">23</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">4.3%</span></td></tr><tr><td><a href="compare/TMS - 20260824-20260904/HERO-68259.html">HERO-68259</a></td><td style="text-align:center">9</td><td style="text-align:center">38</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">5.3%</span></td></tr><tr><td><a href="compare/TMS - 20260824-20260904/HERO-67285.html">HERO-67285</a></td><td style="text-align:center">10</td><td style="text-align:center">17</td><td style="text-align:center"><span style="color:#c0392b;font-weight:bold;font-size:15px">5.9%</span></td></tr>
-    </tbody>
-  </table>
+
+  <div class="region region-final">
+    <div class="region-head">
+      <h2>区域 2 · 最终版本内容</h2>
+      <span class="region-sub">Final (.pdf)</span>
+    </div>
+    <div class="region-body" id="regionFinal"></div>
+  </div>
+
+  <div class="region region-compare">
+    <div class="region-head">
+      <h2>区域 3 · 对比结果</h2>
+      <span class="region-sub">Match / Diff / Ratio</span>
+    </div>
+    <div class="region-body" id="regionCompare"></div>
+  </div>
 </section>
+
+<footer class="footer">
+  <span id="genTime"></span>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
