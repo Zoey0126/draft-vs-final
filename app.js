@@ -65,11 +65,15 @@ function onSprintChange() {
   issueSel.innerHTML = "";
   if (!sprintSel.value) {
     issueSel.disabled = true;
-    issueSel.appendChild(el("option", null, "— 先选择 Sprint —"));
+    const optEmpty = el("option", null, "— 先选择 Sprint —");
+    optEmpty.value = "";
+    issueSel.appendChild(optEmpty);
     return;
   }
   issueSel.disabled = false;
-  issueSel.appendChild(el("option", null, "— 全部 Issue（概览）—"));
+  const optAll = el("option", null, "— 全部 Issue（概览）—");
+  optAll.value = "";
+  issueSel.appendChild(optAll);
   const sp = getSprint(sprintSel.value);
   sp.issues.forEach((i) => {
     const opt = el("option", null, i.key + (i.summary ? "  " + i.summary.slice(0, 40) : ""));
